@@ -43,7 +43,7 @@ Apesar de sua importância, muitas organizações ainda apresentam dificuldades 
 
 Este trabalho apresenta o desenvolvimento de uma solução tecnológica para implantação e acompanhamento da PPSI, integrada ao sistema WorkControl, em arquitetura multi-tenant por \textit{workspace}. A solução estrutura o processo por ciclos de avaliação, aplica diagnóstico por medidas, calcula indicadores globais e por domínio e apoia a geração e execução de planos de ação.
 
-A metodologia adotada envolveu revisão bibliográfica, definição do modelo de dados, implementação de serviços de domínio e validação por prova de conceito com execução ponta a ponta do ciclo PPSI. Os resultados indicam melhoria na rastreabilidade das avaliações, padronização do diagnóstico e apoio objetivo à tomada de decisão.
+A metodologia adotada envolveu revisão bibliográfica, definição do modelo de dados, implementação de serviços de domínio e validação por prova de conceito com execução ponta a ponta do ciclo PPSI. Como resultado, obteve-se evidência funcional de viabilidade do fluxo proposto, com ganhos potenciais de rastreabilidade, padronização do diagnóstico e apoio à tomada de decisão.
 \palavraschave{Segurança da Informação. Política de Segurança da Informação. PPSI. Maturidade. Sistemas de Informação.}
 
 \section*{Abstract}
@@ -54,7 +54,7 @@ Despite its relevance, many organizations still face difficulties in effectively
 
 This work presents the development of a technological solution for ISP implementation and monitoring, integrated into the WorkControl system under a multi-tenant workspace architecture. The solution organizes the process through assessment cycles, structured diagnosis by measures, global and domain indicators, and action-plan generation and follow-up.
 
-The adopted methodology included literature review, data-model design, implementation of domain services, and proof-of-concept validation with an end-to-end ISP cycle execution. Results indicate improvements in traceability, diagnostic standardization, and decision-making support.
+The adopted methodology included literature review, data-model design, implementation of domain services, and proof-of-concept validation with an end-to-end ISP cycle execution. The outcome provides functional evidence of feasibility, with potential gains in traceability, diagnostic standardization, and decision-making support.
 \keywords{Information Security. Information Security Policy. ISP. Maturity. Information Systems.}
 
 \vspace*{20pt} \hrule height 1.5pt
@@ -113,6 +113,8 @@ Modelos de maturidade permitem avaliar o estágio de implementação dos control
 
 Na literatura e na prática institucional, modelos como CMMI, SSE-CMM e C2M2 compartilham uma lógica comum: definição de capacidades por estágios progressivos, critérios observáveis para evolução e foco em institucionalização de processos. Embora tenham escopos diferentes (engenharia de software, engenharia de segurança e maturidade em ciberenergia), esses modelos reforçam que maturidade não é apenas existência de controle, mas também repetibilidade, gestão e melhoria contínua.
 
+No desenho da solução proposta, ISO/IEC 27001 e NIST CSF influenciaram principalmente a organização de controles por domínios e a ideia de melhoria contínua por ciclos; CMMI e SSE-CMM influenciaram a separação entre execução pontual e capacidade institucionalizada do processo. Essas referências orientaram decisões arquiteturais como ciclo com estados explícitos, persistência histórica para comparação temporal e geração de plano de ação vinculada a lacunas.
+
 No presente trabalho, a maturidade é calculada por pontuação normalizada (0 a 1) e classificada em cinco níveis crescentes, permitindo análise global e por domínio temático. A escala foi definida como instrumento operacional do módulo PPSI para leitura gerencial rápida e comparação entre ciclos, sem pretensão de substituir modelos normativos completos.
 
 \subsection{Escala de maturidade adotada}
@@ -142,6 +144,27 @@ Soluções e frameworks consolidados, como ISO/IEC 27001, NIST Cybersecurity Fra
 No recorte de SMEs, \cite{curtin2024} propõem ferramenta de avaliação de risco com foco em simplicidade de uso; o principal ganho é acessibilidade, mas sem integração nativa com ciclo formal de melhoria. Em \cite{getir2024}, a ênfase está em modelagem de ameaças para microempresas, contribuindo para identificação de riscos técnicos, porém com menor cobertura do acompanhamento gerencial pós-diagnóstico. Trabalhos como \cite{researchgate2024,scirp2024,papathanasiou2025} reforçam abordagens de baixo custo, mas tendem a priorizar orientação prescritiva em detrimento de automação operacional ponta a ponta.
 
 Em contraste, a proposta deste trabalho integra, no mesmo módulo, diagnóstico estruturado por medidas, regra explícita de ciclo de vida, cálculo automático de indicadores e geração de plano de ação vinculada às lacunas identificadas. Além disso, o isolamento por \textit{workspace} permite uso multi-tenant no contexto do WorkControl, aspecto pouco explorado nos trabalhos revisados.
+
+A Tabela~\ref{tab:comparativo-relacionados} sintetiza esse posicionamento comparativo em termos de capacidades operacionais centrais.
+
+\subsection{Síntese comparativa}
+
+\begin{table}[htb]
+\centering
+\caption{Posicionamento da proposta em relação aos trabalhos relacionados}
+\label{tab:comparativo-relacionados}
+\begin{tabular}{|p{2.8cm}|p{2.4cm}|p{2.2cm}|p{2.2cm}|p{2.2cm}|}
+\hline
+\textbf{Abordagem} & \textbf{Diagnóstico estruturado} & \textbf{Ciclo de vida explícito} & \textbf{Indicadores automáticos} & \textbf{Plano de ação automatizado} \\
+\hline
+Ferramentas para SMEs (literatura) & Parcial & Geralmente ausente & Parcial & Geralmente ausente \\
+\hline
+Frameworks normativos (ISO/NIST/CIS) & Conceitual & Conceitual & Dependente de implementação & Dependente de implementação \\
+\hline
+Módulo PPSI no WorkControl & Sim & Sim & Sim & Sim \\
+\hline
+\end{tabular}
+\end{table}
 
 \section{Visão geral da solução}
 
@@ -274,6 +297,10 @@ Do ponto de vista de coerência interna, o resultado foi compatível com o diagn
 
 Como limitação da análise, esta avaliação foi realizada em um único cenário de validação, sem comparação estatística entre organizações ou ciclos longos. Assim, a evidência apresentada deve ser interpretada como validação funcional e não como comprovação definitiva de desempenho comparativo da abordagem.
 
+\subsection{Ameaças à validade}
+
+Há ameaças relevantes à validade dos resultados: (i) uso de apenas um \textit{workspace}; (ii) execução de um único ciclo; (iii) ausência de usuários externos ao desenvolvimento na avaliação; e (iv) ausência de comparação antes/depois com processo planilhado no mesmo contexto organizacional. Por esse motivo, afirmações de melhoria devem ser lidas como inferências plausíveis baseadas em inspeção funcional do fluxo, e não como evidência causal medida experimentalmente.
+
 \FloatBarrier
 
 \section{Conclusão}
@@ -284,7 +311,7 @@ Como contribuição prática, a solução transforma a PPSI de artefato document
 
 Do ponto de vista acadêmico, o trabalho demonstra a aplicação prática de conceitos de governança de segurança da informação, modelagem de domínio e arquitetura em camadas, integrando fundamentação teórica com implementação real em ambiente multi-tenant. A solução desenvolvida evidencia como instrumentos conceituais podem ser operacionalizados por meio de engenharia de software estruturada.
 
-Entre as limitações, destacam-se a necessidade de expansão da cobertura de testes para cenários de tenancy em todos os endpoints, a ausência de comparação experimental com abordagens alternativas e a importância de validação longitudinal em múltiplos contextos organizacionais. Também se reconhece que a metodologia adotada priorizou implementação e validação funcional por prova de conceito, sem definição prévia de métricas estatísticas de efetividade.
+Entre as limitações, destacam-se a ausência, no escopo atual, de suíte automatizada de testes unitários e de integração para regras críticas (cálculo de score e transições de ciclo), a ausência de comparação experimental com abordagens alternativas e a importância de validação longitudinal em múltiplos contextos organizacionais. Também se reconhece que a metodologia adotada priorizou implementação e validação funcional por prova de conceito, sem definição prévia de métricas estatísticas de efetividade.
 
 Como trabalhos futuros, recomendam-se:
 
@@ -298,7 +325,5 @@ Como trabalhos futuros, recomendam-se:
 \printbibliography[title={REFERÊNCIAS}]
 
 \end{document}
-
-
 
 
