@@ -20,26 +20,25 @@
 \refsection{0}
   \datalist[entry]{nty/global//global/global/global}
     \entry{electronics2022}{article}{}{}
+      \true{moreauthor}
+      \true{morelabelname}
       \name{author}{1}{}{%
-        {{un=1,uniquepart=given,hash=156799334df12dc4b7d9c67dfe1d9ca4}{%
-           family={al.},
-           familyi={a\bibinitperiod},
-           given={Marios\bibnamedelima Angelopoulos},
-           giveni={M\bibinitperiod\bibinitdelim A\bibinitperiod},
-           givenun=1,
-           prefix={et},
-           prefixi={e\bibinitperiod},
-           prefixun=0}}%
+        {{un=0,uniquepart=base,hash=b76d71e115c5742df97231568652936c}{%
+           family={Angelopoulos},
+           familyi={A\bibinitperiod},
+           given={Marios},
+           giveni={M\bibinitperiod},
+           givenun=0}}%
       }
-      \strng{namehash}{156799334df12dc4b7d9c67dfe1d9ca4}
-      \strng{fullhash}{156799334df12dc4b7d9c67dfe1d9ca4}
-      \strng{fullhashraw}{156799334df12dc4b7d9c67dfe1d9ca4}
-      \strng{bibnamehash}{156799334df12dc4b7d9c67dfe1d9ca4}
-      \strng{authorbibnamehash}{156799334df12dc4b7d9c67dfe1d9ca4}
-      \strng{authornamehash}{156799334df12dc4b7d9c67dfe1d9ca4}
-      \strng{authorfullhash}{156799334df12dc4b7d9c67dfe1d9ca4}
-      \strng{authorfullhashraw}{156799334df12dc4b7d9c67dfe1d9ca4}
-      \field{sortinit}{a}
+      \strng{namehash}{d5dbd659534685161ead86a67206718c}
+      \strng{fullhash}{d5dbd659534685161ead86a67206718c}
+      \strng{fullhashraw}{d5dbd659534685161ead86a67206718c}
+      \strng{bibnamehash}{d5dbd659534685161ead86a67206718c}
+      \strng{authorbibnamehash}{d5dbd659534685161ead86a67206718c}
+      \strng{authornamehash}{d5dbd659534685161ead86a67206718c}
+      \strng{authorfullhash}{d5dbd659534685161ead86a67206718c}
+      \strng{authorfullhashraw}{d5dbd659534685161ead86a67206718c}
+      \field{sortinit}{A}
       \field{sortinithash}{2f401846e2029bad6b3ecc16d50031e2}
       \field{extradatescope}{labelyear}
       \field{labeldatesource}{}
@@ -57,74 +56,6 @@
       \verb{url}
       \verb https://www.mdpi.com/2079-9292/13/19/3910
       \endverb
-    \endentry
-    \entry{sciencedirect2024}{article}{}{}
-      \name{author}{1}{}{%
-        {{un=1,uniquepart=given,hash=df1ecc7b141abfa6cb300ac256f94d08}{%
-           family={al.},
-           familyi={a\bibinitperiod},
-           given={Michael\bibnamedelima Johnson},
-           giveni={M\bibinitperiod\bibinitdelim J\bibinitperiod},
-           givenun=1,
-           prefix={et},
-           prefixi={e\bibinitperiod},
-           prefixun=0}}%
-      }
-      \strng{namehash}{df1ecc7b141abfa6cb300ac256f94d08}
-      \strng{fullhash}{df1ecc7b141abfa6cb300ac256f94d08}
-      \strng{fullhashraw}{df1ecc7b141abfa6cb300ac256f94d08}
-      \strng{bibnamehash}{df1ecc7b141abfa6cb300ac256f94d08}
-      \strng{authorbibnamehash}{df1ecc7b141abfa6cb300ac256f94d08}
-      \strng{authornamehash}{df1ecc7b141abfa6cb300ac256f94d08}
-      \strng{authorfullhash}{df1ecc7b141abfa6cb300ac256f94d08}
-      \strng{authorfullhashraw}{df1ecc7b141abfa6cb300ac256f94d08}
-      \field{sortinit}{a}
-      \field{sortinithash}{2f401846e2029bad6b3ecc16d50031e2}
-      \field{extradatescope}{labelyear}
-      \field{labeldatesource}{}
-      \field{labelnamesource}{author}
-      \field{labeltitlesource}{title}
-      \field{journaltitle}{Computers \& Security}
-      \field{note}{Acesso em: 24 jul. 2025}
-      \field{title}{Cybersecurity Preparedness of Small-to-Medium Businesses}
-      \field{year}{2024}
-      \verb{urlraw}
-      \verb https://www.sciencedirect.com/science/article/pii/S0167404824003316
-      \endverb
-      \verb{url}
-      \verb https://www.sciencedirect.com/science/article/pii/S0167404824003316
-      \endverb
-    \endentry
-    \entry{scirp2024}{misc}{}{}
-      \name{author}{1}{}{%
-        {{un=0,uniquepart=base,hash=197be93b7e090b2d2678156d0aa358e4}{%
-           family={autores},
-           familyi={a\bibinitperiod},
-           given={Yasmin\bibnamedelima S.},
-           giveni={Y\bibinitperiod\bibinitdelim S\bibinitperiod},
-           givenun=0,
-           prefix={e},
-           prefixi={e\bibinitperiod},
-           prefixun=0}}%
-      }
-      \strng{namehash}{197be93b7e090b2d2678156d0aa358e4}
-      \strng{fullhash}{197be93b7e090b2d2678156d0aa358e4}
-      \strng{fullhashraw}{197be93b7e090b2d2678156d0aa358e4}
-      \strng{bibnamehash}{197be93b7e090b2d2678156d0aa358e4}
-      \strng{authorbibnamehash}{197be93b7e090b2d2678156d0aa358e4}
-      \strng{authornamehash}{197be93b7e090b2d2678156d0aa358e4}
-      \strng{authorfullhash}{197be93b7e090b2d2678156d0aa358e4}
-      \strng{authorfullhashraw}{197be93b7e090b2d2678156d0aa358e4}
-      \field{sortinit}{a}
-      \field{sortinithash}{2f401846e2029bad6b3ecc16d50031e2}
-      \field{extradatescope}{labelyear}
-      \field{labeldatesource}{}
-      \field{labelnamesource}{author}
-      \field{labeltitlesource}{title}
-      \field{howpublished}{\url{https://www.scirp.org/journal/paperinformation?paperid=137455}}
-      \field{note}{Acesso em: 24 jul. 2025}
-      \field{title}{Cybersecurity Guide for SMEs: Protecting Small and Medium-sized Enterprises}
-      \field{year}{2024}
     \endentry
     \entry{cheenepalli2025}{misc}{}{}
       \name{author}{4}{}{%
@@ -264,22 +195,24 @@
       \field{year}{2024}
     \endentry
     \entry{mdpi_lgpd2022}{article}{}{}
+      \true{moreauthor}
+      \true{morelabelname}
       \name{author}{1}{}{%
-        {{un=0,uniquepart=base,hash=817d7f5a687d472ca7cad3ed764ce0d7}{%
+        {{un=0,uniquepart=base,hash=0e87653a285fe12f79931beff2675d56}{%
            family={Fernandes},
            familyi={F\bibinitperiod},
-           given={Tatiane\bibnamedelimb Oliveira\bibnamedelimb et\bibnamedelima al.},
-           giveni={T\bibinitperiod\bibinitdelim O\bibinitperiod\bibinitdelim e\bibinitperiod\bibinitdelim a\bibinitperiod},
+           given={Tatiane\bibnamedelima Oliveira},
+           giveni={T\bibinitperiod\bibinitdelim O\bibinitperiod},
            givenun=0}}%
       }
-      \strng{namehash}{817d7f5a687d472ca7cad3ed764ce0d7}
-      \strng{fullhash}{817d7f5a687d472ca7cad3ed764ce0d7}
-      \strng{fullhashraw}{817d7f5a687d472ca7cad3ed764ce0d7}
-      \strng{bibnamehash}{817d7f5a687d472ca7cad3ed764ce0d7}
-      \strng{authorbibnamehash}{817d7f5a687d472ca7cad3ed764ce0d7}
-      \strng{authornamehash}{817d7f5a687d472ca7cad3ed764ce0d7}
-      \strng{authorfullhash}{817d7f5a687d472ca7cad3ed764ce0d7}
-      \strng{authorfullhashraw}{817d7f5a687d472ca7cad3ed764ce0d7}
+      \strng{namehash}{b1fb5f2e343ce96a6bfe366d5e748de9}
+      \strng{fullhash}{b1fb5f2e343ce96a6bfe366d5e748de9}
+      \strng{fullhashraw}{b1fb5f2e343ce96a6bfe366d5e748de9}
+      \strng{bibnamehash}{b1fb5f2e343ce96a6bfe366d5e748de9}
+      \strng{authorbibnamehash}{b1fb5f2e343ce96a6bfe366d5e748de9}
+      \strng{authornamehash}{b1fb5f2e343ce96a6bfe366d5e748de9}
+      \strng{authorfullhash}{b1fb5f2e343ce96a6bfe366d5e748de9}
+      \strng{authorfullhashraw}{b1fb5f2e343ce96a6bfe366d5e748de9}
       \field{sortinit}{F}
       \field{sortinithash}{2638baaa20439f1b5a8f80c6c08a13b4}
       \field{extradatescope}{labelyear}
@@ -326,6 +259,42 @@
       \field{note}{Acesso em: 24 jul. 2025}
       \field{title}{Development of a threat modelling framework and a web-based threat modelling tool for micro businesses}
       \field{year}{2024}
+    \endentry
+    \entry{sciencedirect2024}{article}{}{}
+      \true{moreauthor}
+      \true{morelabelname}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=aa4a83405eb5652cfc269f0942daea0a}{%
+           family={Johnson},
+           familyi={J\bibinitperiod},
+           given={Michael},
+           giveni={M\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{16d327f6fae1c9bec53c506a3de458a2}
+      \strng{fullhash}{16d327f6fae1c9bec53c506a3de458a2}
+      \strng{fullhashraw}{16d327f6fae1c9bec53c506a3de458a2}
+      \strng{bibnamehash}{16d327f6fae1c9bec53c506a3de458a2}
+      \strng{authorbibnamehash}{16d327f6fae1c9bec53c506a3de458a2}
+      \strng{authornamehash}{16d327f6fae1c9bec53c506a3de458a2}
+      \strng{authorfullhash}{16d327f6fae1c9bec53c506a3de458a2}
+      \strng{authorfullhashraw}{16d327f6fae1c9bec53c506a3de458a2}
+      \field{sortinit}{J}
+      \field{sortinithash}{b2f54a9081ace9966a7cb9413811edb4}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Computers \& Security}
+      \field{note}{Acesso em: 24 jul. 2025}
+      \field{title}{Cybersecurity Preparedness of Small-to-Medium Businesses}
+      \field{year}{2024}
+      \verb{urlraw}
+      \verb https://www.sciencedirect.com/science/article/pii/S0167404824003316
+      \endverb
+      \verb{url}
+      \verb https://www.sciencedirect.com/science/article/pii/S0167404824003316
+      \endverb
     \endentry
     \entry{rombaldo2023}{misc}{}{}
       \name{author}{3}{}{%
@@ -533,25 +502,24 @@
       \endverb
     \endentry
     \entry{researchgate2024}{misc}{}{}
-      \name{author}{2}{}{%
+      \true{moreauthor}
+      \true{morelabelname}
+      \name{author}{1}{}{%
         {{un=0,uniquepart=base,hash=44f312776367cb390fa1772bfba26bec}{%
            family={Rana},
            familyi={R\bibinitperiod},
            given={R.\bibnamedelimi A.},
            giveni={R\bibinitperiod\bibinitdelim A\bibinitperiod},
            givenun=0}}%
-        {{un=0,uniquepart=base,hash=5577d244b0e0f090fb16401226bfd8e4}{%
-           family={outros},
-           familyi={o\bibinitperiod}}}%
       }
-      \strng{namehash}{be3bb52ed8f55d08a151ac4850e05fdc}
-      \strng{fullhash}{be3bb52ed8f55d08a151ac4850e05fdc}
-      \strng{fullhashraw}{be3bb52ed8f55d08a151ac4850e05fdc}
-      \strng{bibnamehash}{be3bb52ed8f55d08a151ac4850e05fdc}
-      \strng{authorbibnamehash}{be3bb52ed8f55d08a151ac4850e05fdc}
-      \strng{authornamehash}{be3bb52ed8f55d08a151ac4850e05fdc}
-      \strng{authorfullhash}{be3bb52ed8f55d08a151ac4850e05fdc}
-      \strng{authorfullhashraw}{be3bb52ed8f55d08a151ac4850e05fdc}
+      \strng{namehash}{022580190b5e297a92f91d1d4fbc5cc1}
+      \strng{fullhash}{022580190b5e297a92f91d1d4fbc5cc1}
+      \strng{fullhashraw}{022580190b5e297a92f91d1d4fbc5cc1}
+      \strng{bibnamehash}{022580190b5e297a92f91d1d4fbc5cc1}
+      \strng{authorbibnamehash}{022580190b5e297a92f91d1d4fbc5cc1}
+      \strng{authornamehash}{022580190b5e297a92f91d1d4fbc5cc1}
+      \strng{authorfullhash}{022580190b5e297a92f91d1d4fbc5cc1}
+      \strng{authorfullhashraw}{022580190b5e297a92f91d1d4fbc5cc1}
       \field{sortinit}{R}
       \field{sortinithash}{5e1c39a9d46ffb6bebd8f801023a9486}
       \field{extradatescope}{labelyear}
@@ -561,6 +529,36 @@
       \field{howpublished}{\url{https://www.researchgate.net/publication/384138498}}
       \field{note}{Acesso em: 24 jul. 2025}
       \field{title}{Cost-Effective Cybersecurity Framework for Small and Medium-Sized Enterprises}
+      \field{year}{2024}
+    \endentry
+    \entry{scirp2024}{misc}{}{}
+      \true{moreauthor}
+      \true{morelabelname}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=3b5c00752d9fbc619e41438dc254d185}{%
+           family={S.},
+           familyi={S\bibinitperiod},
+           given={Yasmin},
+           giveni={Y\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{179ae5270426e1d672cc36c0cfc583b7}
+      \strng{fullhash}{179ae5270426e1d672cc36c0cfc583b7}
+      \strng{fullhashraw}{179ae5270426e1d672cc36c0cfc583b7}
+      \strng{bibnamehash}{179ae5270426e1d672cc36c0cfc583b7}
+      \strng{authorbibnamehash}{179ae5270426e1d672cc36c0cfc583b7}
+      \strng{authornamehash}{179ae5270426e1d672cc36c0cfc583b7}
+      \strng{authorfullhash}{179ae5270426e1d672cc36c0cfc583b7}
+      \strng{authorfullhashraw}{179ae5270426e1d672cc36c0cfc583b7}
+      \field{sortinit}{S}
+      \field{sortinithash}{b164b07b29984b41daf1e85279fbc5ab}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{howpublished}{\url{https://www.scirp.org/journal/paperinformation?paperid=137455}}
+      \field{note}{Acesso em: 24 jul. 2025}
+      \field{title}{Cybersecurity Guide for SMEs: Protecting Small and Medium-sized Enterprises}
       \field{year}{2024}
     \endentry
   \enddatalist
