@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.141592653-2.6-0.999998 (MiKTeX 26.2) (preloaded format=xelatex 2026.2.22)  23 FEB 2026 00:03
+This is XeTeX, Version 3.141592653-2.6-0.999998 (MiKTeX 26.2) (preloaded format=xelatex 2026.2.22)  23 FEB 2026 00:21
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -1552,7 +1552,91 @@ Underfull \hbox (badness 4242) in paragraph at lines 34--34
 
 [1
 
-] [2] [3]
+] [2]
+
+LaTeX Warning: Citation 'rombaldo2023' on page 3 undefined on input line 101.
+
+
+LaTeX Warning: Citation 'chidukwani2024' on page 3 undefined on input line 101.
+
+
+
+LaTeX Warning: Citation 'sciencedirect2024' on page 3 undefined on input line 1
+01.
+
+
+Overfull \hbox (0.51613pt too wide) in paragraph at lines 101--102
+[]\TU/Arial(0)/m/n/12 No contexto de organizações de pequeno e médio porte, a l
+iteratura também aponta
+ []
+
+
+Overfull \hbox (23.11343pt too wide) in paragraph at lines 101--102
+\TU/Arial(0)/m/n/12 capacitação como fatores recorrentes para dificuldades de i
+mplementação ([];
+ []
+
+
+LaTeX Warning: Citation 'mgi_ppsi_programa' on page 3 undefined on input line 1
+05.
+
+
+LaTeX Warning: Citation 'mgi_framework_ppsi' on page 3 undefined on input line 
+105.
+
+[3]
+
+LaTeX Warning: Citation 'mgi_cartilha_ppsi' on page 4 undefined on input line 1
+07.
+
+
+LaTeX Warning: Citation 'mgi_framework_ppsi' on page 4 undefined on input line 
+107.
+
+
+Overfull \hbox (1.46648pt too wide) in paragraph at lines 121--122
+\TU/Arial(0)/m/n/12 lhas eletrônicas apresentam limitações operacionais relevan
+tes, especialmente quando
+ []
+
+
+LaTeX Warning: Citation 'mdpi_lgpd2022' on page 4 undefined on input line 127.
+
+[4]
+
+LaTeX Warning: Citation 'rombaldo2023' on page 5 undefined on input line 131.
+
+
+LaTeX Warning: Citation 'electronics2022' on page 5 undefined on input line 131
+.
+
+
+LaTeX Warning: Citation 'cheenepalli2025' on page 5 undefined on input line 131
+.
+
+
+Overfull \hbox (18.22476pt too wide) in paragraph at lines 131--132
+\TU/Arial(0)/m/n/12 mente em organizações com equipes reduzidas e baixa maturid
+ade inicial ([];
+ []
+
+
+LaTeX Warning: Citation 'curtin2024' on page 5 undefined on input line 133.
+
+
+LaTeX Warning: Citation 'getir2024' on page 5 undefined on input line 133.
+
+
+LaTeX Warning: Citation 'researchgate2024' on page 5 undefined on input line 13
+3.
+
+
+LaTeX Warning: Citation 'scirp2024' on page 5 undefined on input line 133.
+
+
+LaTeX Warning: Citation 'papathanasiou2025' on page 5 undefined on input line 1
+33.
+
 Package microtype Info: Loading generic protrusion settings for font family
 (microtype)             `lmtt' (encoding: TU).
 (microtype)             For optimal results, create family-specific settings.
@@ -1562,44 +1646,43 @@ Package microtype Info: Loading generic protrusion settings for font family
 .cfg
 File: mt-cmr.cfg 2013/05/19 v2.2 microtype config. file: Computer Modern Roman 
 (RS)
-) [4] [5] [6]
-Overfull \hbox (3.71846pt too wide) in paragraph at lines 193--194
+) [5] [6] [7]
+Overfull \hbox (3.71846pt too wide) in paragraph at lines 215--216
 []\TU/Arial(0)/m/n/12 Foi considerado um \TU/Arial(0)/m/it/12 workspace \TU/Ari
 al(0)/m/n/12 com o módulo habilitado e dados-base do framework
  []
 
-[7] [8]
+[8] [9]
 
-LaTeX Warning: Empty bibliography on input line 230.
+LaTeX Warning: Empty bibliography on input line 254.
 
-[9] (main.aux)
+[10] (main.aux)
  ***********
 LaTeX2e <2025-11-01>
 L3 programming layer <2020/03/25>
  ***********
 
 
-LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
+LaTeX Warning: There were undefined references.
 
+Package rerunfilecheck Info: File `main.out' has not changed.
+(rerunfilecheck)             Checksum: 3A6B576555BC06B6AE76DC8F88F0C9CE;4008.
 
-Package rerunfilecheck Warning: File `main.out' has changed.
-(rerunfilecheck)                Rerun to get outlines right
-(rerunfilecheck)                or use package `bookmark'.
+Package biblatex Warning: Please (re)run Biber on the file:
+(biblatex)                main
+(biblatex)                and rerun LaTeX afterwards.
 
-Package rerunfilecheck Info: Checksums for `main.out':
-(rerunfilecheck)             Before: F545A809C28E72B023074579272D4C63;1988
-(rerunfilecheck)             After:  EEB82493DEF16157406C678A815C5B0F;3471.
 Package logreq Info: Writing requests to 'main.run.xml'.
 \openout1 = `main.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 36516 strings out of 402983
- 723870 string characters out of 5447033
- 1706064 words of memory out of 5000000
- 64741 multiletter control sequences out of 15000+600000
+ 36711 strings out of 402983
+ 727748 string characters out of 5447033
+ 1706868 words of memory out of 5000000
+ 64936 multiletter control sequences out of 15000+600000
  631980 words of font info for 76 fonts, out of 8000000 for 9000
  1348 hyphenation exceptions out of 8191
  99i,12n,118p,1003b,6025s stack positions out of 10000i,1000n,20000p,200000b,200000s
 
-Output written on main.pdf (9 pages).
+Output written on main.pdf (10 pages).

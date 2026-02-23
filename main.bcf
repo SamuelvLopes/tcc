@@ -2465,6 +2465,22 @@
     <bcf:datasource type="file" datatype="bibtex" glob="false">bibliografia.bib</bcf:datasource>
   </bcf:bibdata>
   <bcf:section number="0">
+    <bcf:citekey order="1" intorder="1">rombaldo2023</bcf:citekey>
+    <bcf:citekey order="1" intorder="2">chidukwani2024</bcf:citekey>
+    <bcf:citekey order="1" intorder="3">sciencedirect2024</bcf:citekey>
+    <bcf:citekey order="2" intorder="1">mgi_ppsi_programa</bcf:citekey>
+    <bcf:citekey order="2" intorder="2">mgi_framework_ppsi</bcf:citekey>
+    <bcf:citekey order="3" intorder="1">mgi_cartilha_ppsi</bcf:citekey>
+    <bcf:citekey order="3" intorder="2">mgi_framework_ppsi</bcf:citekey>
+    <bcf:citekey order="4" intorder="1">mdpi_lgpd2022</bcf:citekey>
+    <bcf:citekey order="5" intorder="1">rombaldo2023</bcf:citekey>
+    <bcf:citekey order="5" intorder="2">electronics2022</bcf:citekey>
+    <bcf:citekey order="5" intorder="3">cheenepalli2025</bcf:citekey>
+    <bcf:citekey order="6" intorder="1">curtin2024</bcf:citekey>
+    <bcf:citekey order="6" intorder="2">getir2024</bcf:citekey>
+    <bcf:citekey order="6" intorder="3">researchgate2024</bcf:citekey>
+    <bcf:citekey order="6" intorder="4">scirp2024</bcf:citekey>
+    <bcf:citekey order="6" intorder="5">papathanasiou2025</bcf:citekey>
   </bcf:section>
   <!-- SORTING TEMPLATES -->
   <bcf:sortingtemplate name="nty">
