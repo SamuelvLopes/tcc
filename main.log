@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.141592653-2.6-0.999998 (MiKTeX 26.2) (preloaded format=xelatex 2026.2.22)  23 FEB 2026 01:21
+This is XeTeX, Version 3.141592653-2.6-0.999998 (MiKTeX 26.2) (preloaded format=xelatex 2026.2.22)  23 FEB 2026 01:31
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -1565,131 +1565,127 @@ Package microtype Info: Loading generic protrusion settings for font family
 (microtype)             `lmtt' (encoding: TU).
 (microtype)             For optimal results, create family-specific settings.
 (microtype)             See the microtype manual for details.
-
-Overfull \hbox (8.6511pt too wide) in paragraph at lines 122--123
-[]\TU/Arial(0)/m/n/12 As faixas utilizadas no sistema (\TU/lmtt/m/n/12 INITIAL\
-TU/Arial(0)/m/n/12 , \TU/lmtt/m/n/12 BASIC\TU/Arial(0)/m/n/12 , \TU/lmtt/m/n/12
- INTERMEDIATE\TU/Arial(0)/m/n/12 , \TU/lmtt/m/n/12 IMPROVING\TU/Arial(0)/m/n/12
- , \TU/lmtt/m/n/12 ADVANCED\TU/Arial(0)/m/n/12 )
- []
-
-[4]
-Overfull \hbox (1.46648pt too wide) in paragraph at lines 132--133
-\TU/Arial(0)/m/n/12 lhas eletrônicas apresentam limitações operacionais relevan
-tes, especialmente quando
- []
-
-[5]
+ [4]
 (C:\Users\Samuel Lopes\AppData\Local\Programs\MiKTeX\tex/latex/microtype\mt-cmr
 .cfg
 File: mt-cmr.cfg 2013/05/19 v2.2 microtype config. file: Computer Modern Roman 
 (RS)
 )
-Underfull \hbox (badness 10000) in paragraph at lines 158--158
+Underfull \hbox (badness 10000) in paragraph at lines 144--145
+[]\TU/Arial(0)/m/n/12 Implementação parcial consis-
+ []
+
+[5]
+Overfull \hbox (1.46648pt too wide) in paragraph at lines 165--166
+\TU/Arial(0)/m/n/12 lhas eletrônicas apresentam limitações operacionais relevan
+tes, especialmente quando
+ []
+
+[6]
+Underfull \hbox (badness 10000) in paragraph at lines 191--191
 []\TU/Arial(0)/b/n/12 Ciclo de
  []
 
 
-Underfull \hbox (badness 5260) in paragraph at lines 158--158
+Underfull \hbox (badness 5260) in paragraph at lines 191--191
 \TU/Arial(0)/b/n/12 vida explí-
  []
 
 
-Overfull \hbox (4.75755pt too wide) in paragraph at lines 158--158
+Overfull \hbox (4.75755pt too wide) in paragraph at lines 191--191
 []\TU/Arial(0)/b/n/12 Indicadores
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 158--158
+Underfull \hbox (badness 10000) in paragraph at lines 191--191
 \TU/Arial(0)/b/n/12 automáti-
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 158--159
+Underfull \hbox (badness 10000) in paragraph at lines 191--192
 []\TU/Arial(0)/b/n/12 Plano de
  []
 
 
-Underfull \hbox (badness 2080) in paragraph at lines 158--159
+Underfull \hbox (badness 2080) in paragraph at lines 191--192
 \TU/Arial(0)/b/n/12 ação auto-
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 160--160
+Underfull \hbox (badness 10000) in paragraph at lines 193--193
 []\TU/Arial(0)/m/n/12 Ferramentas
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 160--160
+Underfull \hbox (badness 10000) in paragraph at lines 193--193
 \TU/Arial(0)/m/n/12 para SMEs
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 162--162
+Underfull \hbox (badness 10000) in paragraph at lines 195--195
 []\TU/Arial(0)/m/n/12 Frameworks
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 162--162
+Underfull \hbox (badness 10000) in paragraph at lines 195--195
 \TU/Arial(0)/m/n/12 normativos
  []
 
 
-Overfull \hbox (2.60612pt too wide) in paragraph at lines 162--162
+Overfull \hbox (2.60612pt too wide) in paragraph at lines 195--195
 \TU/Arial(0)/m/n/12 (ISO/NIST/CIS)| 
  []
 
 
-Overfull \hbox (2.79466pt too wide) in paragraph at lines 162--162
+Overfull \hbox (2.79466pt too wide) in paragraph at lines 195--195
 []\TU/Arial(0)/m/n/12 Dependente
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 162--162
+Underfull \hbox (badness 10000) in paragraph at lines 195--195
 \TU/Arial(0)/m/n/12 de imple-
  []
 
 
-Overfull \hbox (2.79466pt too wide) in paragraph at lines 162--163
+Overfull \hbox (2.79466pt too wide) in paragraph at lines 195--196
 []\TU/Arial(0)/m/n/12 Dependente
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 162--163
+Underfull \hbox (badness 10000) in paragraph at lines 195--196
 \TU/Arial(0)/m/n/12 de imple-
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 164--164
+Underfull \hbox (badness 10000) in paragraph at lines 197--197
 []\TU/Arial(0)/m/n/12 Módulo PPSI
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 164--164
+Underfull \hbox (badness 10000) in paragraph at lines 197--197
 \TU/Arial(0)/m/n/12 no WorkCon-
  []
 
-[6]
 File: imgs/Figura 1.png Graphic file (type bmp)
 <imgs/Figura 1.png>
- [7]
+[7]
 File: imgs/Figura 2.png Graphic file (type bmp)
 <imgs/Figura 2.png>
- [8]
+ [8] [9]
 File: imgs/Figura 3.png Graphic file (type bmp)
 <imgs/Figura 3.png>
 
-Overfull \hbox (3.71846pt too wide) in paragraph at lines 262--263
+Overfull \hbox (3.71846pt too wide) in paragraph at lines 295--296
 []\TU/Arial(0)/m/n/12 Foi considerado um \TU/Arial(0)/m/it/12 workspace \TU/Ari
 al(0)/m/n/12 com o módulo habilitado e dados-base do framework
  []
 
-[9]
+[10]
 File: imgs/Figura 4.png Graphic file (type bmp)
 <imgs/Figura 4.png>
 File: imgs/Figura 5.png Graphic file (type bmp)
 <imgs/Figura 5.png>
- [10] [11] [12] [13] (main.aux)
+ [11] [12] [13] [14] (main.aux)
  ***********
 LaTeX2e <2025-11-01>
 L3 programming layer <2020/03/25>
@@ -1701,12 +1697,12 @@ Package logreq Info: Writing requests to 'main.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 36904 strings out of 402983
- 732674 string characters out of 5447033
- 1719765 words of memory out of 5000000
- 65120 multiletter control sequences out of 15000+600000
+ 36907 strings out of 402983
+ 732759 string characters out of 5447033
+ 1716838 words of memory out of 5000000
+ 65123 multiletter control sequences out of 15000+600000
  631980 words of font info for 76 fonts, out of 8000000 for 9000
  1348 hyphenation exceptions out of 8191
  99i,12n,118p,1003b,6920s stack positions out of 10000i,1000n,20000p,200000b,200000s
 
-Output written on main.pdf (13 pages).
+Output written on main.pdf (14 pages).
