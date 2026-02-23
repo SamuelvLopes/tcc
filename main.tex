@@ -150,7 +150,12 @@ O fluxo funcional ocorre em sete etapas principais:
     \item Geração e acompanhamento dos planos de ação.
 \end{enumerate}
 
-\mockfig{Tela inicial do módulo PPSI com menu de navegação e seletor de ciclo.}{Visão geral do módulo PPSI no WorkControl}{fig:mock-home-ppsi}
+\begin{figure}[htb]
+\centering
+\includegraphics[width=\textwidth]{imgs/Figura 1.png}
+\caption{Visão geral do módulo PPSI no WorkControl}
+\label{fig:mock-home-ppsi}
+\end{figure}
 
 O diagnóstico utiliza catálogo estruturado de domínios, controles, medidas e opções de resposta (com peso e sinalização de aplicabilidade no score). Esse desenho permite padronização da coleta e comparabilidade entre ciclos.
 
@@ -174,7 +179,7 @@ No frontend React/Inertia, as páginas principais estão organizadas em ciclos, 
 
 A navegação foi desenhada para operação sequencial, reduzindo ambiguidades de uso: primeiro diagnosticar, depois consolidar indicadores e por fim tratar as lacunas com ações planejadas.
 
-\mockfig{Diagrama de arquitetura lógica (Frontend React/Inertia, API Laravel, Banco relacional).}{Arquitetura da solução implementada}{fig:mock-arquitetura}
+\mockfig{Diagrama de arquitetura lógica (Frontend React/Inertia, API Laravel, Banco relacional).}{Arquitetura da solução implementada}{fig:arquitetura-solucao}
 
 \subsection{Regras de ciclo de vida}
 
