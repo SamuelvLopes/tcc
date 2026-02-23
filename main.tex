@@ -1,21 +1,19 @@
 \documentclass[12pt]{article}
 \usepackage{ArtigoIFPE}
-\graphicspath{{Imagens/}} % Procura imagens na pasta Imagens
+\graphicspath{{Imagens/}}
 
-\title{COMO PREPARAR UM ARTIGO CIENTÍFICO (EM CAIXA ALTA): subtítulo do trabalho se houver (em caixa baixa)}
-\titleEng{TÍTULO EM INGLÊS (OPCIONAL, CAIXA ALTA): subtítulo (caixa baixa)}
 
-\autora{Nome do autor 1}
-\emaila{Email do autor 1}
-%\autorb{Nome do autor 2}
-%\emailb{Email do autor 2}
-% Aceita até 6 autores (autora, autorb, autorc, ... , autorf) e seus emails
-\orientador{Orientador}
-\emailOrientador{Email do orientador}
+\title{SOLUÇÃO PARA IMPLANTAÇÃO E ACOMPANHAMENTO DA POLÍTICA DE SEGURANÇA DA INFORMAÇÃO}
+\titleEng{SOLUTION FOR IMPLEMENTATION AND MONITORING OF THE INFORMATION SECURITY POLICY}
 
-\campus{Pesqueira}
-\curso{de Bacharelado em Engenharia Elétrica}
-\data{07 de março de 2024}
+\autora{Samuel Vitor Lopes de Souza}
+\emaila{}
+\orientador{Marco Antônio Eugênio Araújo}
+\emailOrientador{}
+
+\campus{Recife}
+\curso{Tecnólogo em Análise e Desenvolvimento de Sistemas}
+\data{23 de fevereiro de 2026}
 
 \begin{document}
 
@@ -25,184 +23,90 @@
 
 \section*{Resumo}
 
-\noindent O resumo é um elemento obrigatório apresentado em um único parágrafo. Indica os principais assuntos abordados, apresentando o(s) objetivo(s), o método, os resultados e as considerações finais sem citação bibliográfica ou abreviação não definida. Na sua extensão deve conter no mínimo 100 e no máximo 250 palavras. Segundo a norma da Associação Brasileira de Normas Técnicas (ABNT) NBR 6028 (2003, seção 3.3.4) ``devem-se evitar símbolos e contrações que não sejam de uso corrente'' como também ``fórmulas, equações, diagramas etc., que não sejam absolutamente necessários; quando seu emprego for imprescindível, defini-los na primeira vez que aparecerem''. 
+\noindent A Segurança da Informação tornou-se um elemento estratégico para as organizações contemporâneas em razão da crescente dependência de sistemas informatizados e do aumento da incidência de incidentes de segurança. Vazamentos de dados, acessos não autorizados e falhas operacionais evidenciam a necessidade de mecanismos que garantam a proteção adequada dos ativos de informação. Nesse contexto, a Política de Segurança da Informação (PPSI) destaca-se como um instrumento fundamental para estabelecer diretrizes, normas e responsabilidades relacionadas à segurança da informação.
 
-\palavraschave{Palavra 1. Palavra 2. Palavra 3.}
+Apesar de sua importância, observa-se que muitas organizações enfrentam dificuldades na implantação efetiva e no acompanhamento contínuo da PPSI. Em diversos cenários, a política é tratada apenas como um documento normativo, elaborado para atender exigências legais ou auditorias pontuais, sem mecanismos estruturados que permitam avaliar sua efetividade, acompanhar a maturidade dos controles e promover melhorias contínuas.
+
+Este trabalho apresenta o desenvolvimento de uma solução tecnológica voltada à implantação e ao acompanhamento da Política de Segurança da Informação, com o objetivo de aproximar a prática organizacional das abordagens adotadas por grandes players do mercado. A solução proposta estrutura o processo de avaliação por meio de ciclos, organiza o diagnóstico dos controles de segurança, calcula indicadores de maturidade e apoia a geração e o acompanhamento de planos de ação.
+
+A metodologia adotada envolveu a análise conceitual da segurança da informação e da PPSI, o estudo de práticas consolidadas no mercado e o desenvolvimento de um sistema com foco em rastreabilidade, consistência dos dados e suporte à tomada de decisão. Os resultados indicam que a solução contribui para tornar a implantação da PPSI mais sistemática, mensurável e alinhada às boas práticas de segurança da informação.
+\palavraschave{Segurança da Informação. Política de Segurança da Informação. PPSI. Maturidade. Sistemas de Informação.}
 
 \section*{Abstract}
 
-\noindent Modelo modelo modelo modelo modelo modelo modelo modelo modelo modelo modelo modelo modelo modelo modelo modelo modelo modelo modelo modelo modelo modelo modelo modelo modelo modelo modelo modelo modelo modelo modelo modelo modelo modelo modelo modelo modelo modelo.
+\noindent Information Security has become a strategic element for contemporary organizations due to the increasing reliance on information systems and the growing number of security incidents. Data breaches, unauthorized access, and operational failures highlight the need for mechanisms that ensure adequate protection of information assets. In this context, the Information Security Policy (ISP) stands out as a fundamental instrument for establishing guidelines, rules, and responsibilities related to information security.
 
-\keywords{Palavra 1. Palavra 2. Palavra 3.}
+Despite its relevance, many organizations face difficulties in effectively implementing and continuously monitoring their ISP. In several cases, the policy is treated merely as a normative document designed to meet legal or audit requirements, without structured mechanisms to assess effectiveness, monitor control maturity, or promote continuous improvement.
+
+This work presents the development of a technological solution aimed at supporting the implementation and monitoring of the Information Security Policy, seeking to bring organizational practices closer to those adopted by major market players. The proposed solution structures assessment cycles, organizes control diagnosis, calculates maturity indicators, and supports the generation and monitoring of action plans.
+
+The adopted methodology involved a conceptual analysis of information security and ISP, the study of consolidated market practices, and the development of a system focused on data traceability, consistency, and decision-making support. The results indicate that the solution contributes to making the ISP implementation process more systematic, measurable, and aligned with information security best practices.
+\keywords{Information Security. Information Security Policy. ISP. Maturity. Information Systems.}
 
 \vspace*{20pt} \hrule height 1.5pt
 
 \section{Introdução}
 
-Teste teste teste teste teste teste teste teste teste teste teste teste teste teste teste teste teste teste teste teste teste teste teste teste teste teste teste teste teste teste teste teste teste teste teste teste teste teste teste teste teste teste teste teste teste teste teste teste teste teste teste teste teste teste teste teste teste teste teste teste. Exemplo de citação textual, conforme \textcite{world2023}, e exemplo de citação direta curta encerrando parágrafo \parencite{world2023}.
-% No arquivo compilado, fica uma marcação em verde indicando que é um link. Mas não se preocupe, pois, quando baixa o PDF, as marcações somem.
+A evolução das tecnologias da informação e a intensificação da digitalização dos processos organizacionais ampliaram significativamente a exposição das organizações a riscos relacionados à segurança da informação. Sistemas corporativos, aplicações web, serviços em nuvem e integrações entre plataformas tornaram os ativos de informação elementos centrais para a operação e a estratégia das organizações.
 
-Teste teste teste teste teste teste teste teste teste teste teste teste teste teste teste teste teste teste teste teste teste teste teste teste teste teste teste teste teste teste teste teste teste teste teste teste teste teste teste teste teste teste teste teste teste teste teste teste teste teste teste teste teste teste teste teste teste teste teste teste teste teste teste.
+Nesse cenário, incidentes de segurança da informação, como vazamentos de dados sensíveis, acessos não autorizados e indisponibilidade de serviços, podem causar impactos financeiros, operacionais e reputacionais. Esses eventos reforçam a necessidade de adoção de práticas estruturadas que garantam a proteção adequada dos ativos de informação.
 
-Utilize o ambiente \textit{citacao} para incluir citações com mais de três linhas.
+A Política de Segurança da Informação (PPSI) surge como um instrumento essencial para estabelecer diretrizes, normas e responsabilidades voltadas à proteção da informação. Entretanto, observa-se que muitas organizações enfrentam dificuldades na implantação e no acompanhamento da PPSI, tratando-a apenas como um documento formal, sem mecanismos de monitoramento contínuo e avaliação da maturidade.
 
-\begin{citacao}
-Exemplo de citação com mais de três linhas. Exemplo de citação com mais de três linhas. Exemplo de citação com mais de três linhas. Exemplo de citação com mais de três linhas. Exemplo de citação com mais de três linhas. Exemplo de citação com mais de três linhas. Exemplo de citação com mais de três linhas. 
-\end{citacao}
+Diante desse contexto, este trabalho tem como objetivo desenvolver uma solução tecnológica para apoiar a implantação e o acompanhamento da Política de Segurança da Informação, aproximando a prática organizacional das abordagens adotadas por grandes players do mercado. A proposta estrutura o diagnóstico, o acompanhamento e a melhoria contínua da segurança da informação por meio de ciclos avaliativos, indicadores de maturidade e planos de ação.
 
-Um exemplo para equação ou fórmula pode ser visto a seguir.
-\begin{equation} \label{eu_eqn}
-e^{\pi i} + 1 = 0
-\end{equation}
+O trabalho está organizado da seguinte forma: a Seção 2 apresenta a fundamentação teórica; a Seção 3 discute os trabalhos relacionados; a Seção 4 apresenta a visão geral da solução; a Seção 5 descreve a arquitetura do sistema; a Seção 6 apresenta a prova de conceito; e a Seção 7 apresenta as conclusões e perspectivas de trabalhos futuros.
 
-Se forem várias linhas \footnote{Mais informações sobre alinhamento de equações: \url{https://www.overleaf.com/learn/latex/Aligning_equations_with_amsmath}}:
-\begin{equation}
-\label{eq1}
-\begin{split}
-A & = \frac{\pi r^2}{2} \\
- & = \frac{1}{2} \pi r^2
-\end{split}
-\end{equation}
+\section{Fundamentação teórica}
 
+\subsection{Segurança da Informação}
 
+A Segurança da Informação compreende o conjunto de práticas, processos e controles destinados à proteção dos ativos de informação contra acessos não autorizados, uso indevido, divulgação, alteração ou destruição. Seu objetivo central é garantir os princípios da confidencialidade, integridade e disponibilidade da informação.
 
-Ilustrações: Qualquer que seja o tipo de ilustração, esta deve ser precedida de sua palavra designativa (neste arquivo estão definidos os ambientes: \textit{figura}, \textit{diagrama}, \textit{fluxograma}, \textit{quadro}, \textit{tabela}, \textit{grafico} e \textit{mapa}). Imediatamente após a ilustração, deve-se indicar a fonte consultada (elemento obrigatório, mesmo que seja produção do próprio autor) conforme a ABNT NBR 10520, legenda, notas e outras informações necessárias à sua compreensão (se houver). A ilustração deve ser citada no texto e inserida o mais próximo possível do trecho a que se refere. A citação pode ser utilizando o comando \textit{autoref}, ex.: conforme pode ser visto no \autoref{dia:VSGDSC}.
+Com a crescente digitalização das organizações, a segurança da informação deixou de ser uma preocupação exclusivamente técnica e passou a integrar a estratégia organizacional. A dependência de sistemas informatizados amplia a superfície de ataque e exige abordagens estruturadas e contínuas.
 
-\begin{diagrama}
-    \caption{Blocos do VS-GDSC.}
-    \centering
-    \includegraphics[width=0.8\linewidth]{diagramaBlocos.eps}\\
-    \XPT Fonte: \textcite{batista2015}
-    \label{dia:VSGDSC}
-\end{diagrama}
+\subsection{Política de Segurança da Informação}
 
-Tabelas: Devem ser citadas no texto, inseridas o mais próximo possível do trecho a que se referem, e padronizadas conforme as Normas de apresentação tabular do IBGE. Um exemplo pode ser visto na \autoref{tab:Residentes}. Deve-se indicar a fonte consultada (elemento obrigatório, mesmo que seja produção do próprio autor), de acordo com a ABNT NBR 10520.
+A Política de Segurança da Informação é um documento normativo que estabelece diretrizes, responsabilidades e regras relacionadas à segurança da informação dentro de uma organização. Seu papel é orientar o comportamento dos usuários e definir controles mínimos de proteção.
 
-\begin{tabela}[hbt]
-    \caption{Pessoas residentes em domicílios particulares, por sexo e situação do domicílio - Brasil - 1980}
-    \centering
-    \vspace{-6pt} % Este comando aproxima ou afasta os "floats" dos textos. Neste caso, estamos aproximando a Legenda da Tabela
-    \begin{tabular}{lccc}
-    \specialrule{2pt}{0pt}{1pt}
-    Situação do Total & Total & Mulheres & Homens \\
-    \specialrule{1pt}{1pt}{1pt}
-    Total & 117.960.301 & 59.595.332 & 58.364.969\\
-    Urbana & 79.972.931 & 41.115.439 & 38.857.492 \\
-    Rural & 37.987.370 & 18.479.893 & 19.507.477 \\
-    \specialrule{2pt}{1pt}{0pt}
-    \end{tabular}\\
-    \vspace{3pt}
-    \XPT Fonte: IBGE (2013)
-    \label{tab:Residentes}
-\end{tabela}
+Entretanto, a efetividade da PPSI depende diretamente de sua implantação prática e do acompanhamento contínuo de seus controles, o que exige mecanismos de monitoramento e avaliação.
 
- Teste teste teste teste teste teste teste teste teste teste teste teste teste teste teste teste teste teste teste teste teste teste teste teste teste teste teste teste teste teste teste teste teste teste teste teste teste teste teste teste teste teste teste teste teste teste teste teste teste teste teste teste teste.
+\subsection{Modelos de Maturidade em Segurança da Informação}
 
- \begin{comment}
-Comentários longos podem ser inseridos no ambiente comment. Este texto não será processado pelo compilador e não irá aparecer no PDF final.
- \end{comment}
+Modelos de maturidade permitem avaliar o estágio de desenvolvimento das práticas de segurança de uma organização. Esses modelos possibilitam identificar lacunas, priorizar ações e acompanhar a evolução ao longo do tempo.
 
-\section{Desenvolvimento}
+\subsection{Indicadores e Monitoramento Contínuo}
 
-  Durante a revisão é comum marcar partes do texto. \hl{Usar o comando \textit{hl} para marcar o texto}. Teste teste teste teste teste teste teste teste teste teste teste teste teste teste teste teste teste teste teste teste teste teste teste teste teste teste teste teste teste teste teste teste teste teste teste teste teste teste teste teste teste teste teste teste teste teste teste teste teste teste teste teste teste teste teste teste teste teste teste
+Indicadores de segurança da informação são métricas utilizadas para avaliar a efetividade dos controles implementados. O monitoramento contínuo permite acompanhar tendências, embasar decisões e promover melhorias contínuas.
 
-  \subsection{Tópico 1}
+\section{Trabalhos relacionados}
 
-  Teste teste teste teste teste teste teste teste teste teste teste teste teste teste teste teste teste teste teste teste teste teste teste teste teste teste teste teste teste teste teste teste teste teste teste teste teste teste teste teste teste teste teste teste teste teste teste teste teste. Exemplo de listagem. Este trabalho de conclusão de curso foi desenvolvido em quatro etapas:
-\begin{itemize}
-\item Escolha do microcontrolador;
-\item Desenvolvimento de algoritmo para receber e segmentar o \textit{status} do módulo SIM900;
-\item Projeto do circuito eletrônico para \textit{reset} do módulo SIM900;
-\item Design e confecção da PCI na CNC \textit{Router}.
-\end{itemize}
+Diversos trabalhos acadêmicos e soluções de mercado abordam a implantação e a gestão da segurança da informação. Frameworks como ISO/IEC 27001, NIST Cybersecurity Framework e CIS Controls são amplamente utilizados como referência.
 
-  \subsection{Tópico 2}
+Soluções comerciais oferecem funcionalidades avançadas de gestão e monitoramento, porém apresentam custos elevados e complexidade excessiva. Diferentemente dessas abordagens, este trabalho propõe uma solução acessível, estruturada e mensurável.
 
- Teste teste teste teste teste teste teste teste teste teste teste teste teste teste teste teste teste teste teste teste teste teste teste teste teste teste teste teste teste teste teste teste teste teste teste teste teste teste teste teste teste teste teste teste teste teste teste teste teste teste teste teste teste.
- 
- Para referenciar um apêndice ou anexo, podem ser utilizados os comandos \textit{ref}, conforme exemplo do \ref{ape:ProgramaPython} ou \ref{anx:ListaAT}.
+\section{Visão geral da solução}
 
- \subsubsection{Subtópico}
+A solução proposta consiste em um sistema desenvolvido para apoiar a implantação e o acompanhamento da Política de Segurança da Informação em ambientes organizacionais multi-tenant. O módulo de PPSI é opcional por workspace e protegido por mecanismos de controle de acesso.
 
-  Teste teste teste teste teste teste teste teste teste teste teste teste teste teste teste teste teste teste teste teste teste teste teste teste teste teste teste teste teste teste teste teste teste teste teste teste teste teste teste teste teste teste teste teste teste teste teste teste teste teste teste teste teste teste teste teste teste teste teste
+O fluxo do sistema envolve habilitação da PPSI, criação de ciclos, diagnóstico das medidas, cálculo de indicadores e geração de planos de ação, garantindo uma abordagem ordenada e consistente.
 
-\section{Metodologia}
+\section{Arquitetura do sistema}
 
-  Teste teste teste teste teste teste teste teste teste teste teste teste teste teste teste teste teste teste teste teste teste teste teste teste teste teste teste teste teste teste teste teste teste teste teste teste teste teste teste teste teste teste teste teste teste teste teste teste teste teste teste teste teste teste teste teste teste teste teste teste teste teste teste teste teste teste teste teste teste teste teste teste teste teste teste teste teste teste teste teste teste teste teste teste teste teste.
+A arquitetura do sistema é composta por camadas de apresentação, aplicação e persistência. As regras de negócio são isoladas em serviços de domínio, garantindo manutenibilidade, escalabilidade e confiabilidade.
 
-  \section{Resultados e análise}
+\section{Prova de conceito}
 
- Teste teste teste teste teste teste teste teste teste teste teste teste teste teste teste teste teste teste teste teste teste teste teste teste teste teste teste teste teste teste teste teste teste teste teste teste teste teste teste teste teste teste teste teste teste teste teste teste teste teste teste teste teste.
+A prova de conceito validou a execução de um ciclo completo de avaliação da PPSI, desde a habilitação até a geração de indicadores e planos de ação, demonstrando a viabilidade prática da solução.
 
-\section{Considerações finais / Conclusões}
- 
-  Teste teste teste teste teste teste teste teste teste teste teste teste teste teste teste teste teste teste teste teste teste teste teste teste teste teste teste teste teste teste teste teste teste teste teste teste teste teste teste teste teste teste teste teste teste teste teste teste teste teste teste teste teste teste teste teste teste teste teste
+\section{Conclusão}
 
-  \printbibliography[title={REFERÊNCIAS}]
+Este trabalho apresentou o desenvolvimento de uma solução tecnológica voltada à implantação e ao acompanhamento da Política de Segurança da Informação. A proposta busca aproximar a prática organizacional das abordagens adotadas por grandes players do mercado, oferecendo uma solução estruturada, mensurável e alinhada às boas práticas de segurança da informação.
 
-\reiniciaAlfa % Reinicia numeração para os Apêndices
+Os resultados indicam que a solução contribui para tornar o processo de implantação da PPSI mais organizado, transparente e passível de acompanhamento contínuo. Como limitações, destaca-se a ausência de validação em ambientes organizacionais reais e a dependência do engajamento dos usuários no processo de diagnóstico.
 
-\apendice{Exemplo de programa em Python}
-\label{ape:ProgramaPython}
+Como trabalhos futuros, sugere-se a ampliação das funcionalidades do sistema, a integração com frameworks consolidados de segurança da informação, a execução de testes automatizados e a aplicação da solução em estudos de caso reais.
 
-% Mais informações sobre como inserir códigos fonte: https://pt.overleaf.com/learn/latex/Code_listing
-\begin{lstlisting}[language=Python,caption=Exemplo.]
-import numpy as np
-    
-def incmatrix(genl1,genl2):
-    m = len(genl1)
-    n = len(genl2)
-    M = None #to become the incidence matrix
-    VT = np.zeros((n*m,1), int)  #dummy variable
-    
-    #compute the bitwise xor matrix
-    M1 = bitxormatrix(genl1)
-    M2 = np.triu(bitxormatrix(genl2),1) 
-
-    for i in range(m-1):
-        for j in range(i+1, m):
-            [r,c] = np.where(M2 == M1[i,j])
-            for k in range(len(r)):
-                VT[(i)*n + r[k]] = 1;
-                VT[(i)*n + c[k]] = 1;
-                VT[(j)*n + r[k]] = 1;
-                VT[(j)*n + c[k]] = 1;
-                
-                if M is None:
-                    M = np.copy(VT)
-                else:
-                    M = np.concatenate((M, VT), 1)
-                
-                VT = np.zeros((n*m,1), int)
-    
-    return M
-\end{lstlisting}
-
-\reiniciaAlfa % Reinicia numeração para os Anexos
-
-\anexo{Lista de comandos AT utilizados}
-\label{anx:ListaAT}
-
-\begin{itemize}
-    \item AT: Comando de verificação básica de comunicação, onde o módulo geralmente responde com "OK";
-    \item AT+CCID: Verifica o número do cartão SIM inserido no módulo. O módulo responderá com o número ICCID (\textit{Integrated Circuit Card Identifier}) do cartão SIM, que é um identificador único do cartão;
-    \item AT+CPIN: Verifica o status do PIN (\textit{Personal Identification Number}) do cartão SIM;
-    \item AT+CREG: Consulta o status de registro na rede;
-    \item AT+CSQ: Consulta a qualidade do sinal da rede;
-    \item AT+CMGF: Define o modo de mensagem (texto ou PDU) para envio e recebimento de SMS;
-    \item AT+CMGS: Envia uma mensagem de texto;
-    \item AT+CMGL: Lista mensagens SMS armazenadas na memória do módulo;
-    \item AT+CMGR: Lê uma mensagem SMS específica;
-    \item AT+CMGD: Exclui uma mensagem SMS;
-    \item ATD: Inicia uma chamada telefônica;
-    \item ATH: Encerra uma chamada telefônica;
-    \item AT+CGATT: Ativa ou desativa o serviço GPRS;
-    \item AT+CGDCONT: Define os parâmetros da conexão GPRS;
-    \item AT+CIICR: Inicia a conexão GPRS;
-    \item AT+CIPSTART: Inicia uma conexão TCP ou UDP;
-    \item AT+CIPSEND: Envia dados por meio da conexão TCP ou UDP;
-    \item AT+CIPCLOSE: Fecha uma conexão TCP ou UDP;
-    \item AT+SAPBR: Configura e gerencia a conexão GPRS.
-\end{itemize}
+\printbibliography[title={REFERÊNCIAS}]
 
 \end{document}

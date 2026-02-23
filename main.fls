@@ -388,29 +388,6 @@ OUTPUT main.out
 INPUT .\Imagens\logo-ifpe.png
 INPUT .\Imagens\logo-ifpe.png
 OUTPUT main.xdv
-INPUT C:\Users\Samuel Lopes\AppData\Local\Programs\MiKTeX\fonts\tfm\public\cm\cmmi12.tfm
-INPUT C:\Users\Samuel Lopes\AppData\Local\Programs\MiKTeX\fonts\tfm\public\cm\cmmi8.tfm
-INPUT C:\Users\Samuel Lopes\AppData\Local\Programs\MiKTeX\fonts\tfm\public\cm\cmmi6.tfm
-INPUT C:\Users\Samuel Lopes\AppData\Local\Programs\MiKTeX\fonts\tfm\public\cm\cmsy10.tfm
-INPUT C:\Users\Samuel Lopes\AppData\Local\Programs\MiKTeX\fonts\tfm\public\cm\cmsy8.tfm
-INPUT C:\Users\Samuel Lopes\AppData\Local\Programs\MiKTeX\fonts\tfm\public\cm\cmsy6.tfm
-INPUT C:\Users\Samuel Lopes\AppData\Local\Programs\MiKTeX\fonts\tfm\public\cm\cmex10.tfm
-INPUT C:\Users\Samuel Lopes\AppData\Local\Programs\MiKTeX\fonts\tfm\public\amsfonts\cmextra\cmex8.tfm
-INPUT C:\Users\Samuel Lopes\AppData\Local\Programs\MiKTeX\fonts\tfm\public\amsfonts\cmextra\cmex7.tfm
-INPUT C:\Users\Samuel Lopes\AppData\Local\Programs\MiKTeX\fonts\tfm\public\cm\cmr12.tfm
-INPUT C:\Users\Samuel Lopes\AppData\Local\Programs\MiKTeX\tex\latex\microtype\mt-cmr.cfg
-INPUT C:\Users\Samuel Lopes\AppData\Local\Programs\MiKTeX\tex\latex\microtype\mt-cmr.cfg
-INPUT C:\Users\Samuel Lopes\AppData\Local\Programs\MiKTeX\tex\latex\microtype\mt-cmr.cfg
-INPUT C:\Users\Samuel Lopes\AppData\Local\Programs\MiKTeX\fonts\tfm\public\cm\cmr8.tfm
-INPUT C:\Users\Samuel Lopes\AppData\Local\Programs\MiKTeX\fonts\tfm\public\cm\cmr6.tfm
-INPUT C:\Users\Samuel Lopes\AppData\Local\Programs\MiKTeX\fonts\tfm\public\amsfonts\cmextra\cmex7.tfm
-INPUT C:\Users\Samuel Lopes\AppData\Local\Programs\MiKTeX\fonts\tfm\public\amsfonts\cmextra\cmex7.tfm
-INPUT .\Imagens\diagramaBlocos.eps
-INPUT .\Imagens\diagramaBlocos.eps
-INPUT Imagens\diagramaBlocos.eps
-INPUT C:\Users\Samuel Lopes\AppData\Local\Programs\MiKTeX\tex\latex\listings\lstlang1.sty
-INPUT C:\Users\Samuel Lopes\AppData\Local\Programs\MiKTeX\tex\latex\listings\lstlang1.sty
-INPUT C:\Users\Samuel Lopes\AppData\Local\Programs\MiKTeX\tex\latex\listings\lstlang1.sty
 INPUT main.aux
 INPUT .\main.out
 INPUT .\main.out
