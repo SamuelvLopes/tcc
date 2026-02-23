@@ -119,9 +119,42 @@ No presente trabalho, a maturidade é calculada por pontuação normalizada (0 a
 
 \subsection{Escala de maturidade adotada}
 
-As faixas utilizadas no sistema (\texttt{INITIAL}, \texttt{BASIC}, \texttt{INTERMEDIATE}, \texttt{IMPROVING}, \texttt{ADVANCED}) foram definidas como convenção de classificação para o contexto desta implementação. O objetivo prático foi separar cenários críticos (abaixo de 0,30), básicos (0,30 a 0,49), intermediários (0,50 a 0,69), em evolução (0,70 a 0,89) e avançados (a partir de 0,90), preservando interpretação simples pelos gestores.
+A definição de uma escala de maturidade é necessária para transformar o score numérico em interpretação gerencial. Neste trabalho, adotou-se uma estrutura de cinco níveis (\texttt{INITIAL}, \texttt{BASIC}, \texttt{INTERMEDIATE}, \texttt{IMPROVING}, \texttt{ADVANCED}) para manter analogia estrutural com modelos de maturidade discutidos na Seção 2.4, como CMMI e abordagens por estágios evolutivos utilizadas em segurança. Esses referenciais organizam evolução por níveis qualitativos, ainda que não definam cortes numéricos normalizados no intervalo [0,1].
 
-Trata-se, portanto, de uma escala heurística de apoio à decisão, adequada à prova de conceito e ao acompanhamento evolutivo interno. Como limitação, reconhece-se que a calibração dos limiares ainda requer validação empírica com maior volume de ciclos e comparação com benchmarks externos.
+No plano matemático, o score do ciclo é tratado como média ponderada normalizada no domínio [0,1], conforme:
+\[
+\text{score}=\frac{\sum_{i=1}^{n}(p_i \cdot r_i)}{\sum_{i=1}^{n}p_i},
+\]
+em que \(p_i\) representa o peso da medida \(i\) e \(r_i\) representa o valor normalizado da resposta da medida \(i\). Como o resultado já está normalizado, os limiares foram definidos proporcionalmente dentro desse domínio. Em particular, o corte em 0,50 corresponde ao ponto médio do intervalo, separando níveis iniciais dos níveis de maior consolidação.
+
+A Tabela~\ref{tab:escala-maturidade} apresenta os intervalos adotados.
+
+\begin{table}[htb]
+\centering
+\caption{Escala de maturidade adotada no módulo PPSI}
+\label{tab:escala-maturidade}
+\begin{tabular}{|c|c|p{6.2cm}|}
+\hline
+\textbf{Faixa de score} & \textbf{Nível} & \textbf{Interpretação qualitativa} \\
+\hline
+score < 0,30 & \texttt{INITIAL} & Controles majoritariamente incipientes ou não implementados. \\
+\hline
+0,30 \(\le\) score < 0,50 & \texttt{BASIC} & Práticas iniciais presentes, porém ainda com baixa consistência. \\
+\hline
+0,50 \(\le\) score < 0,70 & \texttt{INTERMEDIATE} & Implementação parcial consistente, com lacunas relevantes. \\
+\hline
+0,70 \(\le\) score < 0,90 & \texttt{IMPROVING} & Processo em consolidação, com maioria dos controles implementados. \\
+\hline
+score \(\ge\) 0,90 & \texttt{ADVANCED} & Alto grau de institucionalização e estabilidade operacional. \\
+\hline
+\end{tabular}
+\end{table}
+
+Esses intervalos foram definidos para favorecer leitura executiva, comparabilidade entre ciclos e reprodutibilidade do diagnóstico. Cada nível expressa uma condição qualitativa distinta do processo, facilitando priorização de ações e comunicação de resultado para diferentes públicos organizacionais.
+
+Ressalta-se, contudo, que os limiares possuem natureza heurística e adaptativa. Não se tratam de benchmarks oficiais de ISO/IEC 27001, NIST CSF, CMMI ou outros referenciais, mas de parâmetros operacionais definidos com base em coerência conceitual e matemática com o modelo de score adotado.
+
+Como limitação metodológica, a calibração dos cortes ainda não foi validada empiricamente em amostra ampla. Trabalhos futuros podem refinar esses limiares por meio de análise estatística e comparação longitudinal entre múltiplas organizações e ciclos de avaliação.
 
 \subsection{Indicadores e melhoria contínua}
 
@@ -226,7 +259,7 @@ Em caso de pendências, a API retorna conflito com a contagem de itens não resp
 
 \subsection{Cálculo de indicadores}
 
-Os indicadores são calculados a partir das respostas válidas para pontuação. Para cada resposta aplicável, o sistema soma o peso no numerador e incrementa o denominador, resultando em score normalizado entre 0 e 1.
+Os indicadores são calculados a partir das respostas válidas para pontuação por média ponderada normalizada: o numerador agrega a contribuição de cada medida (\(p_i \cdot r_i\)) e o denominador agrega a soma dos pesos aplicáveis (\(\sum p_i\)), resultando em score no intervalo [0,1], coerente com a escala definida na Seção 2.5.
 
 A classificação de maturidade segue faixas:
 
@@ -325,5 +358,3 @@ Como trabalhos futuros, recomendam-se:
 \printbibliography[title={REFERÊNCIAS}]
 
 \end{document}
-
-
