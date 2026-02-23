@@ -98,6 +98,12 @@ A PPSI define diretrizes institucionais para uso, proteção e tratamento das in
 
 Para que a política gere valor, é necessário acompanhamento periódico dos controles, registro de evidências e correção estruturada de não conformidades. Assim, a implantação da PPSI deve ser tratada como processo contínuo e não como evento pontual.
 
+\subsection{Origem do PPSI no contexto adotado}
+
+No contexto deste trabalho, a sigla PPSI também se relaciona ao Programa de Privacidade e Segurança da Informação do Governo Federal, referência utilizada na estruturação do framework aplicado no sistema. Em fonte oficial, o programa foi instituído pela Portaria SGD/MGI nº 852, de 28 de março de 2023, no âmbito do Ministério da Gestão e da Inovação em Serviços Públicos, com condução da Secretaria de Governo Digital (SGD) \cite{mgi_ppsi_programa,mgi_framework_ppsi}.
+
+Assim, a origem institucional do PPSI adotado como referência não está associada a um autor individual, mas a uma iniciativa pública de governança digital liderada pela SGD/MGI para os órgãos do SISP. A motivação declarada é elevar maturidade e resiliência em privacidade e segurança da informação, apoiar adequação normativa (como LGPD e normativos de segurança) e reduzir riscos operacionais em serviços digitais governamentais \cite{mgi_cartilha_ppsi,mgi_framework_ppsi}.
+
 \subsection{Modelos de maturidade em segurança}
 
 Modelos de maturidade permitem avaliar o estágio de implementação dos controles e a capacidade da organização de sustentar práticas de segurança ao longo do tempo. O uso de níveis de maturidade facilita comparação entre ciclos, priorização de investimentos e comunicação executiva de resultados.
@@ -107,6 +113,14 @@ No presente trabalho, a maturidade é calculada por pontuação normalizada (0 a
 \subsection{Indicadores e melhoria contínua}
 
 Indicadores operam como mecanismo de gestão: transformam respostas de diagnóstico em informação objetiva para decisão. Quando acoplados a ciclos periódicos e planos de ação, viabilizam melhoria contínua orientada por dados, reduzindo subjetividade na condução da PPSI.
+
+\subsection{Digitalização de instrumentos de governança}
+
+Instrumentos de governança organizacional tradicionalmente baseados em planilhas eletrônicas apresentam limitações operacionais relevantes, especialmente quando utilizados para processos contínuos de acompanhamento e melhoria. Entre essas limitações destacam-se a ausência de controle estruturado de versões, dificuldade de rastreabilidade histórica, risco de inconsistência no preenchimento manual e limitação na consolidação automatizada de indicadores.
+
+A digitalização desses instrumentos por meio de plataformas estruturadas permite padronização do fluxo de avaliação, aplicação de regras de validação, persistência histórica dos dados e cálculo automatizado de métricas de desempenho. Além disso, sistemas digitais viabilizam controle de ciclo de vida, segregação de contexto por organização e integração com mecanismos de auditoria.
+
+No contexto da Política de Segurança da Informação, a transformação da ferramenta PPSI de planilha para sistema estruturado representa avanço significativo na maturidade do processo de governança, permitindo que o diagnóstico deixe de ser um artefato estático e passe a ser um mecanismo dinâmico de acompanhamento contínuo.
 
 \section{Trabalhos relacionados}
 
@@ -135,6 +149,10 @@ O fluxo funcional ocorre em sete etapas principais:
 \mockfig{Tela inicial do módulo PPSI com menu de navegação e seletor de ciclo.}{Visão geral do módulo PPSI no WorkControl}{fig:mock-home-ppsi}
 
 O diagnóstico utiliza catálogo estruturado de domínios, controles, medidas e opções de resposta (com peso e sinalização de aplicabilidade no score). Esse desenho permite padronização da coleta e comparabilidade entre ciclos.
+
+Diferentemente da abordagem baseada exclusivamente em planilha eletrônica, a solução implementada introduz controle formal de ciclo de vida, validações automáticas de consistência, cálculo imediato de indicadores normalizados e geração estruturada de planos de ação.
+
+Enquanto a planilha depende de consolidação manual e interpretação subjetiva dos resultados, a plataforma digital garante padronização do diagnóstico, redução de erros operacionais e maior confiabilidade na análise evolutiva entre ciclos de avaliação. Dessa forma, o sistema transforma a PPSI de instrumento documental em processo operacional mensurável.
 
 \section{Arquitetura e implementação}
 
@@ -215,6 +233,8 @@ Os resultados observados confirmam que o módulo sustenta a jornada proposta com
 Este trabalho apresentou uma solução para implantação e acompanhamento da Política de Segurança da Informação, implementada no projeto WorkControl. A proposta materializa um fluxo contínuo de governança, estruturado em ciclo, diagnóstico, indicador e ação.
 
 Como contribuição prática, a solução transforma a PPSI de artefato documental em processo mensurável e gerenciável. O uso de regras de ciclo de vida, pontuação normalizada e geração automática de planos reduz subjetividade e aumenta previsibilidade operacional.
+
+Do ponto de vista acadêmico, o trabalho demonstra a aplicação prática de conceitos de governança de segurança da informação, modelagem de domínio e arquitetura em camadas, integrando fundamentação teórica com implementação real em ambiente multi-tenant. A solução desenvolvida evidencia como instrumentos conceituais podem ser operacionalizados por meio de engenharia de software estruturada.
 
 Entre as limitações, destacam-se a necessidade de expansão da cobertura de testes para cenários de tenancy em todos os endpoints e a importância de validação longitudinal em múltiplos contextos organizacionais.
 
