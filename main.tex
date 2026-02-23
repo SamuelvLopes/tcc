@@ -2,7 +2,6 @@
 \usepackage{ArtigoIFPE}
 \graphicspath{{Imagens/}}
 
-
 \title{SOLUÇÃO PARA IMPLANTAÇÃO E ACOMPANHAMENTO DA POLÍTICA DE SEGURANÇA DA INFORMAÇÃO}
 \titleEng{SOLUTION FOR IMPLEMENTATION AND MONITORING OF THE INFORMATION SECURITY POLICY}
 
@@ -15,6 +14,20 @@
 \curso{Tecnólogo em Análise e Desenvolvimento de Sistemas}
 \data{23 de fevereiro de 2026}
 
+\newcommand{\mockfig}[3]{
+\begin{figure}[htb]
+\centering
+\fbox{\begin{minipage}[c][6cm][c]{0.90\linewidth}
+\centering
+\textbf{[MOCK DE IMAGEM]}\\[6pt]
+#1\\[6pt]
+\textit{Substituir por print real do sistema na versão final.}
+\end{minipage}}
+\caption{#2}
+\label{#3}
+\end{figure}
+}
+
 \begin{document}
 
 \maketitle
@@ -23,89 +36,196 @@
 
 \section*{Resumo}
 
-\noindent A Segurança da Informação tornou-se um elemento estratégico para as organizações contemporâneas em razão da crescente dependência de sistemas informatizados e do aumento da incidência de incidentes de segurança. Vazamentos de dados, acessos não autorizados e falhas operacionais evidenciam a necessidade de mecanismos que garantam a proteção adequada dos ativos de informação. Nesse contexto, a Política de Segurança da Informação (PPSI) destaca-se como um instrumento fundamental para estabelecer diretrizes, normas e responsabilidades relacionadas à segurança da informação.
+\noindent A Segurança da Informação tornou-se um elemento estratégico para as organizações em razão da crescente dependência de sistemas informatizados e do aumento da incidência de incidentes de segurança. Vazamentos de dados, acessos não autorizados e falhas operacionais evidenciam a necessidade de mecanismos que garantam a proteção adequada dos ativos de informação. Nesse contexto, a Política de Segurança da Informação (PPSI) destaca-se como instrumento fundamental para estabelecer diretrizes, normas e responsabilidades.
 
-Apesar de sua importância, observa-se que muitas organizações enfrentam dificuldades na implantação efetiva e no acompanhamento contínuo da PPSI. Em diversos cenários, a política é tratada apenas como um documento normativo, elaborado para atender exigências legais ou auditorias pontuais, sem mecanismos estruturados que permitam avaliar sua efetividade, acompanhar a maturidade dos controles e promover melhorias contínuas.
+Apesar de sua importância, muitas organizações ainda apresentam dificuldades na implantação efetiva e no acompanhamento contínuo da PPSI. Em diversos cenários, a política é tratada apenas como documento normativo para fins de auditoria, sem mecanismos estruturados para mensurar maturidade, monitorar evolução e direcionar melhorias.
 
-Este trabalho apresenta o desenvolvimento de uma solução tecnológica voltada à implantação e ao acompanhamento da Política de Segurança da Informação, com o objetivo de aproximar a prática organizacional das abordagens adotadas por grandes players do mercado. A solução proposta estrutura o processo de avaliação por meio de ciclos, organiza o diagnóstico dos controles de segurança, calcula indicadores de maturidade e apoia a geração e o acompanhamento de planos de ação.
+Este trabalho apresenta o desenvolvimento de uma solução tecnológica para implantação e acompanhamento da PPSI, integrada ao sistema WorkControl, em arquitetura multi-tenant por \textit{workspace}. A solução estrutura o processo por ciclos de avaliação, aplica diagnóstico por medidas, calcula indicadores globais e por domínio e apoia a geração e execução de planos de ação.
 
-A metodologia adotada envolveu a análise conceitual da segurança da informação e da PPSI, o estudo de práticas consolidadas no mercado e o desenvolvimento de um sistema com foco em rastreabilidade, consistência dos dados e suporte à tomada de decisão. Os resultados indicam que a solução contribui para tornar a implantação da PPSI mais sistemática, mensurável e alinhada às boas práticas de segurança da informação.
+A metodologia adotada envolveu revisão bibliográfica, definição do modelo de dados, implementação de serviços de domínio e validação por prova de conceito com execução ponta a ponta do ciclo PPSI. Os resultados indicam melhoria na rastreabilidade das avaliações, padronização do diagnóstico e apoio objetivo à tomada de decisão.
 \palavraschave{Segurança da Informação. Política de Segurança da Informação. PPSI. Maturidade. Sistemas de Informação.}
 
 \section*{Abstract}
 
-\noindent Information Security has become a strategic element for contemporary organizations due to the increasing reliance on information systems and the growing number of security incidents. Data breaches, unauthorized access, and operational failures highlight the need for mechanisms that ensure adequate protection of information assets. In this context, the Information Security Policy (ISP) stands out as a fundamental instrument for establishing guidelines, rules, and responsibilities related to information security.
+\noindent Information Security has become a strategic element for organizations due to the increasing reliance on information systems and the growing number of security incidents. Data breaches, unauthorized access, and operational failures highlight the need for mechanisms that ensure adequate protection of information assets. In this context, the Information Security Policy (ISP) is a key instrument for defining guidelines, rules, and responsibilities.
 
-Despite its relevance, many organizations face difficulties in effectively implementing and continuously monitoring their ISP. In several cases, the policy is treated merely as a normative document designed to meet legal or audit requirements, without structured mechanisms to assess effectiveness, monitor control maturity, or promote continuous improvement.
+Despite its relevance, many organizations still face difficulties in effectively implementing and continuously monitoring their ISP. In several situations, the policy is handled only as a compliance document, without structured mechanisms to measure maturity, track progress, and drive continuous improvement.
 
-This work presents the development of a technological solution aimed at supporting the implementation and monitoring of the Information Security Policy, seeking to bring organizational practices closer to those adopted by major market players. The proposed solution structures assessment cycles, organizes control diagnosis, calculates maturity indicators, and supports the generation and monitoring of action plans.
+This work presents the development of a technological solution for ISP implementation and monitoring, integrated into the WorkControl system under a multi-tenant workspace architecture. The solution organizes the process through assessment cycles, structured diagnosis by measures, global and domain indicators, and action-plan generation and follow-up.
 
-The adopted methodology involved a conceptual analysis of information security and ISP, the study of consolidated market practices, and the development of a system focused on data traceability, consistency, and decision-making support. The results indicate that the solution contributes to making the ISP implementation process more systematic, measurable, and aligned with information security best practices.
+The adopted methodology included literature review, data-model design, implementation of domain services, and proof-of-concept validation with an end-to-end ISP cycle execution. Results indicate improvements in traceability, diagnostic standardization, and decision-making support.
 \keywords{Information Security. Information Security Policy. ISP. Maturity. Information Systems.}
 
 \vspace*{20pt} \hrule height 1.5pt
 
 \section{Introdução}
 
-A evolução das tecnologias da informação e a intensificação da digitalização dos processos organizacionais ampliaram significativamente a exposição das organizações a riscos relacionados à segurança da informação. Sistemas corporativos, aplicações web, serviços em nuvem e integrações entre plataformas tornaram os ativos de informação elementos centrais para a operação e a estratégia das organizações.
+A transformação digital aumentou a dependência das organizações em sistemas de informação, integrações de dados e serviços conectados. Como consequência, elevou-se também a exposição a riscos de segurança, incluindo indisponibilidade de serviços, perda de integridade de dados e vazamento de informações sensíveis. Nesse cenário, a Política de Segurança da Informação (PPSI) é necessária para formalizar diretrizes, responsabilidades e controles mínimos.
 
-Nesse cenário, incidentes de segurança da informação, como vazamentos de dados sensíveis, acessos não autorizados e indisponibilidade de serviços, podem causar impactos financeiros, operacionais e reputacionais. Esses eventos reforçam a necessidade de adoção de práticas estruturadas que garantam a proteção adequada dos ativos de informação.
+O problema observado é que, na prática, a PPSI frequentemente não possui acompanhamento operacional contínuo. Muitas organizações elaboram a política, mas não conseguem monitorar o grau de implementação de cada controle, medir evolução ao longo do tempo ou transformar lacunas em planos de ação priorizados.
 
-A Política de Segurança da Informação (PPSI) surge como um instrumento essencial para estabelecer diretrizes, normas e responsabilidades voltadas à proteção da informação. Entretanto, observa-se que muitas organizações enfrentam dificuldades na implantação e no acompanhamento da PPSI, tratando-a apenas como um documento formal, sem mecanismos de monitoramento contínuo e avaliação da maturidade.
+Este trabalho propõe uma solução de software para apoiar a implantação e o acompanhamento da PPSI no contexto do projeto WorkControl. A proposta foi implementada como módulo específico, habilitável por \textit{workspace}, com fluxo estruturado por ciclo de avaliação, diagnóstico, cálculo de indicadores e plano de trabalho.
 
-Diante desse contexto, este trabalho tem como objetivo desenvolver uma solução tecnológica para apoiar a implantação e o acompanhamento da Política de Segurança da Informação, aproximando a prática organizacional das abordagens adotadas por grandes players do mercado. A proposta estrutura o diagnóstico, o acompanhamento e a melhoria contínua da segurança da informação por meio de ciclos avaliativos, indicadores de maturidade e planos de ação.
+\subsection{Objetivo geral}
 
-O trabalho está organizado da seguinte forma: a Seção 2 apresenta a fundamentação teórica; a Seção 3 discute os trabalhos relacionados; a Seção 4 apresenta a visão geral da solução; a Seção 5 descreve a arquitetura do sistema; a Seção 6 apresenta a prova de conceito; e a Seção 7 apresenta as conclusões e perspectivas de trabalhos futuros.
+Desenvolver uma solução tecnológica para implantação e acompanhamento contínuo da Política de Segurança da Informação, com foco em rastreabilidade, mensuração de maturidade e apoio à melhoria contínua.
+
+\subsection{Objetivos específicos}
+
+\begin{itemize}
+    \item Estruturar o processo de avaliação da PPSI em ciclos com estados controlados;
+    \item Implementar diagnóstico por medidas com respostas padronizadas e justificativas;
+    \item Calcular indicadores globais e por domínio com classificação de maturidade;
+    \item Automatizar a geração de planos de ação a partir de lacunas identificadas;
+    \item Validar o fluxo completo em prova de conceito no sistema implementado.
+\end{itemize}
+
+\subsection{Organização do trabalho}
+
+A Seção 2 apresenta a fundamentação teórica. A Seção 3 discute trabalhos relacionados. A Seção 4 descreve a solução proposta. A Seção 5 detalha a arquitetura e implementação. A Seção 6 apresenta a prova de conceito. A Seção 7 traz as conclusões e trabalhos futuros.
 
 \section{Fundamentação teórica}
 
 \subsection{Segurança da Informação}
 
-A Segurança da Informação compreende o conjunto de práticas, processos e controles destinados à proteção dos ativos de informação contra acessos não autorizados, uso indevido, divulgação, alteração ou destruição. Seu objetivo central é garantir os princípios da confidencialidade, integridade e disponibilidade da informação.
+A Segurança da Informação é baseada na proteção dos ativos informacionais segundo os princípios de confidencialidade, integridade e disponibilidade. Na prática organizacional, esses princípios exigem combinação entre controles técnicos, processos e governança, com responsabilidades claramente definidas.
 
-Com a crescente digitalização das organizações, a segurança da informação deixou de ser uma preocupação exclusivamente técnica e passou a integrar a estratégia organizacional. A dependência de sistemas informatizados amplia a superfície de ataque e exige abordagens estruturadas e contínuas.
+Além do aspecto tecnológico, a segurança também depende de disciplina operacional. Sem processos de monitoramento e revisão, controles tendem a perder efetividade ao longo do tempo, especialmente em ambientes dinâmicos e com múltiplos sistemas.
 
 \subsection{Política de Segurança da Informação}
 
-A Política de Segurança da Informação é um documento normativo que estabelece diretrizes, responsabilidades e regras relacionadas à segurança da informação dentro de uma organização. Seu papel é orientar o comportamento dos usuários e definir controles mínimos de proteção.
+A PPSI define diretrizes institucionais para uso, proteção e tratamento das informações. Seu objetivo não é apenas documental, mas operacional: orientar comportamentos, estabelecer critérios de conformidade e apoiar decisões de gestão de risco.
 
-Entretanto, a efetividade da PPSI depende diretamente de sua implantação prática e do acompanhamento contínuo de seus controles, o que exige mecanismos de monitoramento e avaliação.
+Para que a política gere valor, é necessário acompanhamento periódico dos controles, registro de evidências e correção estruturada de não conformidades. Assim, a implantação da PPSI deve ser tratada como processo contínuo e não como evento pontual.
 
-\subsection{Modelos de Maturidade em Segurança da Informação}
+\subsection{Modelos de maturidade em segurança}
 
-Modelos de maturidade permitem avaliar o estágio de desenvolvimento das práticas de segurança de uma organização. Esses modelos possibilitam identificar lacunas, priorizar ações e acompanhar a evolução ao longo do tempo.
+Modelos de maturidade permitem avaliar o estágio de implementação dos controles e a capacidade da organização de sustentar práticas de segurança ao longo do tempo. O uso de níveis de maturidade facilita comparação entre ciclos, priorização de investimentos e comunicação executiva de resultados.
 
-\subsection{Indicadores e Monitoramento Contínuo}
+No presente trabalho, a maturidade é calculada por pontuação normalizada (0 a 1) e classificada em níveis crescentes, permitindo análise global e por domínio temático.
 
-Indicadores de segurança da informação são métricas utilizadas para avaliar a efetividade dos controles implementados. O monitoramento contínuo permite acompanhar tendências, embasar decisões e promover melhorias contínuas.
+\subsection{Indicadores e melhoria contínua}
+
+Indicadores operam como mecanismo de gestão: transformam respostas de diagnóstico em informação objetiva para decisão. Quando acoplados a ciclos periódicos e planos de ação, viabilizam melhoria contínua orientada por dados, reduzindo subjetividade na condução da PPSI.
 
 \section{Trabalhos relacionados}
 
-Diversos trabalhos acadêmicos e soluções de mercado abordam a implantação e a gestão da segurança da informação. Frameworks como ISO/IEC 27001, NIST Cybersecurity Framework e CIS Controls são amplamente utilizados como referência.
+Soluções e frameworks consolidados, como ISO/IEC 27001, NIST Cybersecurity Framework e CIS Controls, oferecem referência robusta para governança de segurança. Entretanto, sua adoção prática pode exigir alto esforço de adaptação, principalmente em organizações com equipes reduzidas e baixa maturidade inicial.
 
-Soluções comerciais oferecem funcionalidades avançadas de gestão e monitoramento, porém apresentam custos elevados e complexidade excessiva. Diferentemente dessas abordagens, este trabalho propõe uma solução acessível, estruturada e mensurável.
+Ferramentas comerciais de mercado oferecem painéis e automações avançadas, porém com custos e complexidade que podem dificultar implantação incremental. A proposta deste trabalho foca uma abordagem mais acessível e gradual, mantendo os elementos essenciais: ciclo, diagnóstico estruturado, indicadores e plano de ação.
+
+Como diferencial, o módulo PPSI implementado no WorkControl combina isolamento por \textit{workspace}, regras explícitas de ciclo de vida, cálculo automático de indicadores e geração de plano de trabalho em uma única solução integrada.
 
 \section{Visão geral da solução}
 
-A solução proposta consiste em um sistema desenvolvido para apoiar a implantação e o acompanhamento da Política de Segurança da Informação em ambientes organizacionais multi-tenant. O módulo de PPSI é opcional por workspace e protegido por mecanismos de controle de acesso.
+A solução foi implementada como módulo de domínio no WorkControl, com ativação por \textit{feature flag} (\texttt{workspaces.is\_ppsi\_enabled}). Quando habilitado, o sistema disponibiliza rotas web e API para todas as etapas da jornada PPSI.
 
-O fluxo do sistema envolve habilitação da PPSI, criação de ciclos, diagnóstico das medidas, cálculo de indicadores e geração de planos de ação, garantindo uma abordagem ordenada e consistente.
+O fluxo funcional ocorre em sete etapas principais:
 
-\section{Arquitetura do sistema}
+\begin{enumerate}
+    \item Habilitação do módulo no \textit{workspace};
+    \item Criação do ciclo de avaliação;
+    \item Início formal do ciclo;
+    \item Resposta das medidas no diagnóstico;
+    \item Encerramento do ciclo com validação de pendências;
+    \item Cálculo e visualização de indicadores;
+    \item Geração e acompanhamento dos planos de ação.
+\end{enumerate}
 
-A arquitetura do sistema é composta por camadas de apresentação, aplicação e persistência. As regras de negócio são isoladas em serviços de domínio, garantindo manutenibilidade, escalabilidade e confiabilidade.
+\mockfig{Tela inicial do módulo PPSI com menu de navegação e seletor de ciclo.}{Visão geral do módulo PPSI no WorkControl}{fig:mock-home-ppsi}
+
+O diagnóstico utiliza catálogo estruturado de domínios, controles, medidas e opções de resposta (com peso e sinalização de aplicabilidade no score). Esse desenho permite padronização da coleta e comparabilidade entre ciclos.
+
+\section{Arquitetura e implementação}
+
+A arquitetura segue separação em camadas de apresentação, aplicação e persistência, com serviços de domínio para regras de negócio críticas (ciclo de vida, cálculo de indicadores e geração de planos).
+
+\subsection{Backend}
+
+No backend Laravel, as rotas da API estão sob o prefixo \texttt{/api/ppsi}, protegidas por autenticação e middleware de habilitação do módulo. O middleware valida o contexto do \textit{workspace} e bloqueia acesso quando a PPSI está desabilitada.
+
+As principais entidades persistidas incluem: organizações, ciclos, respostas, indicadores e planos de ação. As tabelas \texttt{ppsi\_*} suportam o fluxo completo de avaliação e auditoria do processo.
+
+\subsection{Frontend}
+
+No frontend React/Inertia, as páginas principais estão organizadas em ciclos, diagnóstico, relatório e plano de trabalho. O layout compartilhado do módulo mantém o seletor de ciclo ativo e centraliza o contexto da avaliação.
+
+A navegação foi desenhada para operação sequencial, reduzindo ambiguidades de uso: primeiro diagnosticar, depois consolidar indicadores e por fim tratar as lacunas com ações planejadas.
+
+\mockfig{Diagrama de arquitetura lógica (Frontend React/Inertia, API Laravel, Banco relacional).}{Arquitetura da solução implementada}{fig:mock-arquitetura}
+
+\subsection{Regras de ciclo de vida}
+
+O ciclo possui três estados: \texttt{draft}, \texttt{in\_progress} e \texttt{closed}. A transição é validada por regras de negócio: só é possível iniciar um ciclo em rascunho e só é possível encerrá-lo quando não existem medidas pendentes.
+
+Em caso de pendências, a API retorna conflito com a contagem de itens não respondidos, impedindo fechamento inconsistente e mantendo a confiabilidade dos indicadores.
+
+\subsection{Cálculo de indicadores}
+
+Os indicadores são calculados a partir das respostas válidas para pontuação. Para cada resposta aplicável, o sistema soma o peso no numerador e incrementa o denominador, resultando em score normalizado entre 0 e 1.
+
+A classificação de maturidade segue faixas:
+
+\begin{itemize}
+    \item menor que 0,30: \texttt{INITIAL};
+    \item menor que 0,50: \texttt{BASIC};
+    \item menor que 0,70: \texttt{INTERMEDIATE};
+    \item menor que 0,90: \texttt{IMPROVING};
+    \item maior ou igual a 0,90: \texttt{ADVANCED}.
+\end{itemize}
+
+O sistema persiste resultados por domínio e resultado global por ciclo, permitindo análise histórica da evolução da maturidade.
+
+\subsection{Geração de plano de ação}
+
+Após diagnóstico, o gerador de plano cria ações automaticamente para lacunas identificadas, com prioridade proporcional à distância para implementação plena do controle. Medidas não respondidas recebem prioridade máxima.
+
+Essa automação reduz esforço manual inicial e acelera a conversão de diagnóstico em execução prática de melhoria.
+
+\mockfig{Tela de plano de trabalho com lista priorizada, filtros e edição de status da ação.}{Plano de ação gerado automaticamente a partir do diagnóstico}{fig:mock-planos}
 
 \section{Prova de conceito}
 
-A prova de conceito validou a execução de um ciclo completo de avaliação da PPSI, desde a habilitação até a geração de indicadores e planos de ação, demonstrando a viabilidade prática da solução.
+A prova de conceito consistiu na execução ponta a ponta do módulo PPSI em ambiente funcional do WorkControl. O objetivo foi verificar consistência das regras e viabilidade de uso no processo real de acompanhamento.
+
+\subsection{Cenário de validação}
+
+Foi considerado um \textit{workspace} com o módulo habilitado e dados-base do framework PPSI carregados por seeder. Em seguida, um ciclo foi criado e iniciado para preenchimento do diagnóstico.
+
+\subsection{Etapas executadas}
+
+\begin{enumerate}
+    \item Criação de ciclo em estado \texttt{draft};
+    \item Início do ciclo e definição de data de início;
+    \item Resposta das medidas por domínio;
+    \item Tentativa de encerramento com e sem pendências;
+    \item Cálculo de indicadores após encerramento válido;
+    \item Geração automática de plano de trabalho;
+    \item Atualização manual de status e responsáveis das ações.
+\end{enumerate}
+
+\mockfig{Tela de diagnóstico por medidas, com filtros por domínio e controle e respostas registradas.}{Execução do diagnóstico no ciclo de avaliação}{fig:mock-diagnostico}
+
+\mockfig{Tela de relatório com score global, score por domínio e histórico entre ciclos.}{Visualização de indicadores e maturidade}{fig:mock-relatorio}
+
+Os resultados observados confirmam que o módulo sustenta a jornada proposta com rastreabilidade e coerência entre entrada (diagnóstico), processamento (indicadores) e saída (plano de ação).
 
 \section{Conclusão}
 
-Este trabalho apresentou o desenvolvimento de uma solução tecnológica voltada à implantação e ao acompanhamento da Política de Segurança da Informação. A proposta busca aproximar a prática organizacional das abordagens adotadas por grandes players do mercado, oferecendo uma solução estruturada, mensurável e alinhada às boas práticas de segurança da informação.
+Este trabalho apresentou uma solução para implantação e acompanhamento da Política de Segurança da Informação, implementada no projeto WorkControl. A proposta materializa um fluxo contínuo de governança, estruturado em ciclo, diagnóstico, indicador e ação.
 
-Os resultados indicam que a solução contribui para tornar o processo de implantação da PPSI mais organizado, transparente e passível de acompanhamento contínuo. Como limitações, destaca-se a ausência de validação em ambientes organizacionais reais e a dependência do engajamento dos usuários no processo de diagnóstico.
+Como contribuição prática, a solução transforma a PPSI de artefato documental em processo mensurável e gerenciável. O uso de regras de ciclo de vida, pontuação normalizada e geração automática de planos reduz subjetividade e aumenta previsibilidade operacional.
 
-Como trabalhos futuros, sugere-se a ampliação das funcionalidades do sistema, a integração com frameworks consolidados de segurança da informação, a execução de testes automatizados e a aplicação da solução em estudos de caso reais.
+Entre as limitações, destacam-se a necessidade de expansão da cobertura de testes para cenários de tenancy em todos os endpoints e a importância de validação longitudinal em múltiplos contextos organizacionais.
+
+Como trabalhos futuros, recomendam-se:
+
+\begin{itemize}
+    \item ampliação da suíte de testes automatizados para regras de negócio críticas;
+    \item refinamento do OpenAPI para cobertura integral dos endpoints do módulo;
+    \item integração com fontes externas para evidências de controles;
+    \item aplicação da solução em estudos de caso reais com comparação entre ciclos.
+\end{itemize}
 
 \printbibliography[title={REFERÊNCIAS}]
 
