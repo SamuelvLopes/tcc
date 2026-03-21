@@ -1,3 +1,4 @@
+::cmd /c compilar.cmd
 @echo off
 set "MIKTEX_BIN=%LOCALAPPDATA%\Programs\MiKTeX\miktex\bin\x64"
 if exist "%MIKTEX_BIN%\xelatex.exe" set "PATH=%MIKTEX_BIN%;%PATH%"

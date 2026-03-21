@@ -1,15 +1,15 @@
-[0] Config.pm:328> INFO - This is Biber 2.21
-[1] Config.pm:331> INFO - Logfile is 'main.blg'
-[800] biber-MSWIN64:342> INFO - === 
-[1097] Biber.pm:421> INFO - Reading 'main.bcf'
-[1574] Biber.pm:1002> INFO - Found 14 citekeys in bib section 0
-[1697] Biber.pm:4487> INFO - Processing section 0
-[1802] Biber.pm:4678> INFO - Looking for bibtex file 'bibliografia.bib' for section 0
-[2024] bibtex.pm:1713> INFO - LaTeX decoding ...
-[2180] bibtex.pm:1519> INFO - Found BibTeX data source 'bibliografia.bib'
-[3410] UCollate.pm:68> INFO - Overriding locale 'pt-PT' defaults 'variable = shifted' with 'variable = non-ignorable'
-[3410] UCollate.pm:68> INFO - Overriding locale 'pt-PT' defaults 'normalization = NFD' with 'normalization = prenormalized'
-[3410] Biber.pm:4307> INFO - Sorting list 'nty/global//global/global/global' of type 'entry' with template 'nty' and locale 'pt-PT'
-[3410] Biber.pm:4313> INFO - No sort tailoring available for locale 'pt-PT'
-[3618] bbl.pm:676> INFO - Writing 'main.bbl' with encoding 'UTF-8'
-[3656] bbl.pm:779> INFO - Output to main.bbl
+[6] Config.pm:328> INFO - This is Biber 2.21
+[9] Config.pm:331> INFO - Logfile is 'main.blg'
+[1169] biber-MSWIN64:342> INFO - === 
+[1522] Biber.pm:421> INFO - Reading 'main.bcf'
+[3191] Biber.pm:1002> INFO - Found 14 citekeys in bib section 0
+[3279] Biber.pm:4487> INFO - Processing section 0
+[3368] Biber.pm:4678> INFO - Looking for bibtex file 'bibliografia.bib' for section 0
+[3530] bibtex.pm:1713> INFO - LaTeX decoding ...
+[3687] bibtex.pm:1519> INFO - Found BibTeX data source 'bibliografia.bib'
+[4773] UCollate.pm:68> INFO - Overriding locale 'pt-PT' defaults 'variable = shifted' with 'variable = non-ignorable'
+[4775] UCollate.pm:68> INFO - Overriding locale 'pt-PT' defaults 'normalization = NFD' with 'normalization = prenormalized'
+[4777] Biber.pm:4307> INFO - Sorting list 'nty/global//global/global/global' of type 'entry' with template 'nty' and locale 'pt-PT'
+[4791] Biber.pm:4313> INFO - No sort tailoring available for locale 'pt-PT'
+[4995] bbl.pm:676> INFO - Writing 'main.bbl' with encoding 'UTF-8'
+[5089] bbl.pm:779> INFO - Output to main.bbl
