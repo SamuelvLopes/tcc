@@ -3,8 +3,8 @@
 \graphicspath{{Imagens/}}
 \usepackage{placeins}
 
-\title{SOLUÇÃO PARA IMPLANTAÇÃO E ACOMPANHAMENTO DA POLÍTICA DE SEGURANÇA DA INFORMAÇÃO}
-\titleEng{SOLUTION FOR IMPLEMENTATION AND MONITORING OF THE INFORMATION SECURITY POLICY}
+\title{PPSI Digital: Sistema para Implantação e Acompanhamento do Programa de Privacidade e Segurança da Informação do Gov.br}
+\titleEng{PPSI Digital: System for Implementing and Monitoring the Gov.br Privacy and Information Security Program}
 
 \autora{Samuel Vitor Lopes de Souza}
 \emaila{samuelvitorprofissional@gmail.com}
@@ -37,39 +37,39 @@
 
 \section*{Resumo}
 
-\noindent A Segurança da Informação tornou-se um elemento estratégico para as organizações em razão da crescente dependência de sistemas informatizados e do aumento da incidência de incidentes de segurança. Vazamentos de dados, acessos não autorizados e falhas operacionais evidenciam a necessidade de mecanismos que garantam a proteção adequada dos ativos de informação. Nesse contexto, a Política de Segurança da Informação (PPSI) destaca-se como instrumento fundamental para estabelecer diretrizes, normas e responsabilidades.
+\noindent A Segurança da Informação tornou-se um elemento estratégico para as organizações em razão da crescente dependência de sistemas informatizados e do aumento da incidência de incidentes de segurança. Vazamentos de dados, acessos não autorizados e falhas operacionais evidenciam a necessidade de mecanismos que garantam a proteção adequada dos ativos de informação. Nesse contexto, o Programa de Privacidade e Segurança da Informação (PPSI) do Gov.br destaca-se como iniciativa institucional para estabelecer diretrizes, normas e responsabilidades.
 
-Apesar de sua importância, muitas organizações ainda apresentam dificuldades na implantação efetiva e no acompanhamento contínuo da PPSI. Em diversos cenários, a política é tratada apenas como documento normativo para fins de auditoria, sem mecanismos estruturados para mensurar maturidade, monitorar evolução e direcionar melhorias.
+Apesar de sua importância, muitas organizações ainda apresentam dificuldades na implantação efetiva e no acompanhamento contínuo do PPSI do Gov.br. Em diversos cenários, o programa é tratado apenas como documento normativo para fins de auditoria, sem mecanismos estruturados para mensurar maturidade, monitorar evolução e direcionar melhorias.
 
-Este trabalho apresenta o desenvolvimento de uma solução tecnológica para implantação e acompanhamento da PPSI, integrada ao sistema WorkControl, em arquitetura multi-tenant por \textit{workspace}. A solução estrutura o processo por ciclos de avaliação, aplica diagnóstico por medidas, calcula indicadores globais e por domínio e apoia a geração e execução de planos de ação.
+Este trabalho apresenta o desenvolvimento de uma solução tecnológica para implantação e acompanhamento do PPSI Digital, integrada ao sistema WorkControl, em arquitetura multi-tenant por \textit{workspace}. A solução estrutura o processo por ciclos de avaliação, aplica diagnóstico por medidas, calcula indicadores globais e por domínio e apoia a geração e execução de planos de ação.
 
-A metodologia adotada envolveu revisão bibliográfica, definição do modelo de dados, implementação de serviços de domínio e validação por prova de conceito com execução ponta a ponta do ciclo PPSI. Como resultado, obteve-se evidência funcional de viabilidade do fluxo proposto, com ganhos potenciais de rastreabilidade, padronização do diagnóstico e apoio à tomada de decisão.
-\palavraschave{Segurança da Informação. Política de Segurança da Informação. PPSI. Maturidade. Sistemas de Informação.}
+A metodologia adotada envolveu revisão bibliográfica, definição do modelo de dados, implementação de serviços de domínio e validação por prova de conceito com execução ponta a ponta do ciclo do PPSI. Como resultado, obteve-se evidência funcional de viabilidade do fluxo proposto, com ganhos potenciais de rastreabilidade, padronização do diagnóstico e apoio à tomada de decisão.
+\palavraschave{Segurança da Informação. Programa de Privacidade e Segurança da Informação. Gov.br. PPSI. Maturidade. Sistemas de Informação.}
 
 \section*{Abstract}
 
-\noindent Information Security has become a strategic element for organizations due to the increasing reliance on information systems and the growing number of security incidents. Data breaches, unauthorized access, and operational failures highlight the need for mechanisms that ensure adequate protection of information assets. In this context, the Information Security Policy (ISP) is a key instrument for defining guidelines, rules, and responsibilities.
+\noindent Information Security has become a strategic element for organizations due to the increasing reliance on information systems and the growing number of security incidents. Data breaches, unauthorized access, and operational failures highlight the need for mechanisms that ensure adequate protection of information assets. In this context, the Gov.br Privacy and Information Security Program (PPSI) is a key instrument for defining guidelines, rules, and responsibilities.
 
-Despite its relevance, many organizations still face difficulties in effectively implementing and continuously monitoring their ISP. In several situations, the policy is handled only as a compliance document, without structured mechanisms to measure maturity, track progress, and drive continuous improvement.
+Despite its relevance, many organizations still face difficulties in effectively implementing and continuously monitoring the PPSI. In several situations, the program is handled only as a compliance document, without structured mechanisms to measure maturity, track progress, and drive continuous improvement.
 
-This work presents the development of a technological solution for ISP implementation and monitoring, integrated into the WorkControl system under a multi-tenant workspace architecture. The solution organizes the process through assessment cycles, structured diagnosis by measures, global and domain indicators, and action-plan generation and follow-up.
+This work presents the development of a technological solution for PPSI implementation and monitoring, integrated into the WorkControl system under a multi-tenant workspace architecture. The solution organizes the process through assessment cycles, structured diagnosis by measures, global and domain indicators, and action-plan generation and follow-up.
 
-The adopted methodology included literature review, data-model design, implementation of domain services, and proof-of-concept validation with an end-to-end ISP cycle execution. The outcome provides functional evidence of feasibility, with potential gains in traceability, diagnostic standardization, and decision-making support.
-\keywords{Information Security. Information Security Policy. ISP. Maturity. Information Systems.}
+The adopted methodology included literature review, data-model design, implementation of domain services, and proof-of-concept validation with an end-to-end PPSI cycle execution. The outcome provides functional evidence of feasibility, with potential gains in traceability, diagnostic standardization, and decision-making support.
+\keywords{Information Security. Gov.br Privacy and Information Security Program. PPSI. Maturity. Information Systems.}
 
 \vspace*{20pt} \hrule height 1.5pt
 
 \section{Introdução}
 
-A transformação digital aumentou a dependência das organizações em sistemas de informação, integrações de dados e serviços conectados. Como consequência, elevou-se também a exposição a riscos de segurança, incluindo indisponibilidade de serviços, perda de integridade de dados e vazamento de informações sensíveis. Nesse cenário, a Política de Segurança da Informação (PPSI) é necessária para formalizar diretrizes, responsabilidades e controles mínimos.
+A transformação digital aumentou a dependência das organizações em sistemas de informação, integrações de dados e serviços conectados. Como consequência, elevou-se também a exposição a riscos de segurança, incluindo indisponibilidade de serviços, perda de integridade de dados e vazamento de informações sensíveis. Nesse cenário, o Programa de Privacidade e Segurança da Informação (PPSI) do Gov.br consolida diretrizes, responsabilidades e controles mínimos para os órgãos do SISP, servindo como referência adotada neste trabalho.
 
-O problema observado é que, na prática, a PPSI frequentemente não possui acompanhamento operacional contínuo. Muitas organizações elaboram a política, mas não conseguem monitorar o grau de implementação de cada controle, medir evolução ao longo do tempo ou transformar lacunas em planos de ação priorizados.
+O problema observado é que, na prática, o PPSI frequentemente não possui acompanhamento operacional contínuo. Muitas organizações elaboram o programa, mas não conseguem monitorar o grau de implementação de cada controle, medir evolução ao longo do tempo ou transformar lacunas em planos de ação priorizados.
 
-Este trabalho propõe uma solução de software para apoiar a implantação e o acompanhamento da PPSI no contexto do projeto WorkControl. A proposta foi implementada como módulo específico, habilitável por \textit{workspace}, com fluxo estruturado por ciclo de avaliação, diagnóstico, cálculo de indicadores e plano de trabalho.
+Este trabalho propõe uma solução de software para apoiar a implantação e o acompanhamento do PPSI do Gov.br no contexto do projeto WorkControl. A proposta foi implementada como módulo específico, habilitável por \textit{workspace}, com fluxo estruturado por ciclo de avaliação, diagnóstico, cálculo de indicadores e plano de trabalho.
 
 \subsection{Objetivo geral}
 
-Desenvolver uma solução tecnológica para implantação e acompanhamento contínuo da Política de Segurança da Informação, com foco em rastreabilidade, mensuração de maturidade e apoio à melhoria contínua.
+Desenvolver uma solução tecnológica para implantação e acompanhamento contínuo do Programa de Privacidade e Segurança da Informação do Gov.br, com foco em rastreabilidade, mensuração de maturidade e apoio à melhoria contínua.
 
 \subsection{Objetivos específicos}
 
@@ -93,11 +93,11 @@ A Segurança da Informação é baseada na proteção dos ativos informacionais 
 
 Além do aspecto tecnológico, a segurança também depende de disciplina operacional. Sem processos de monitoramento e revisão, controles tendem a perder efetividade ao longo do tempo, especialmente em ambientes dinâmicos e com múltiplos sistemas.
 
-\subsection{Política de Segurança da Informação}
+\subsection{Programa de Privacidade e Segurança da Informação do Gov.br}
 
-A PPSI define diretrizes institucionais para uso, proteção e tratamento das informações. Seu objetivo não é apenas documental, mas operacional: orientar comportamentos, estabelecer critérios de conformidade e apoiar decisões de gestão de risco.
+O PPSI do Gov.br define diretrizes institucionais para uso, proteção e tratamento das informações. Seu objetivo não é apenas documental, mas operacional: orientar comportamentos, estabelecer critérios de conformidade e apoiar decisões de gestão de risco.
 
-Para que a política gere valor, é necessário acompanhamento periódico dos controles, registro de evidências e correção estruturada de não conformidades. Assim, a implantação da PPSI deve ser tratada como processo contínuo e não como evento pontual.
+Para que o programa gere valor, é necessário acompanhamento periódico dos controles, registro de evidências e correção estruturada de não conformidades. Assim, a implantação do PPSI deve ser tratada como processo contínuo e não como evento pontual.
 
 No contexto de organizações de pequeno e médio porte, a literatura também aponta baixa maturidade em práticas de segurança, limitações orçamentárias e barreiras de capacitação como fatores recorrentes para dificuldades de implementação \cite{rombaldo2023,chidukwani2024,sciencedirect2024}.
 
@@ -166,7 +166,7 @@ Instrumentos de governança organizacional tradicionalmente baseados em planilha
 
 A digitalização desses instrumentos por meio de plataformas estruturadas permite padronização do fluxo de avaliação, aplicação de regras de validação, persistência histórica dos dados e cálculo automatizado de métricas de desempenho. Além disso, sistemas digitais viabilizam controle de ciclo de vida, segregação de contexto por organização e integração com mecanismos de auditoria.
 
-No contexto da Política de Segurança da Informação, a transformação da ferramenta PPSI de planilha para sistema estruturado representa avanço significativo na maturidade do processo de governança, permitindo que o diagnóstico deixe de ser um artefato estático e passe a ser um mecanismo dinâmico de acompanhamento contínuo.
+No contexto do Programa de Privacidade e Segurança da Informação do Gov.br, a transformação do PPSI de planilha para sistema estruturado representa avanço significativo na maturidade do processo de governança, permitindo que o diagnóstico deixe de ser um artefato estático e passe a ser um mecanismo dinâmico de acompanhamento contínuo.
 
 Esse movimento se torna especialmente relevante em cenários de baixa conformidade regulatória no tratamento de dados, como observado em estudos sobre organizações brasileiras em contexto de LGPD \cite{mdpi_lgpd2022}.
 
@@ -338,7 +338,7 @@ Há ameaças relevantes à validade dos resultados: (i) uso de apenas um \textit
 
 \section{Conclusão}
 
-Este trabalho apresentou uma solução para implantação e acompanhamento da Política de Segurança da Informação, implementada no projeto WorkControl. A proposta materializa um fluxo contínuo de governança, estruturado em ciclo, diagnóstico, indicador e ação.
+Este trabalho apresentou uma solução para implantação e acompanhamento do Programa de Privacidade e Segurança da Informação do Gov.br, implementada no projeto WorkControl. A proposta materializa um fluxo contínuo de governança, estruturado em ciclo, diagnóstico, indicador e ação.
 
 Como contribuição prática, a solução transforma a PPSI de artefato documental em processo mensurável e gerenciável. O uso de regras de ciclo de vida, pontuação normalizada e geração automática de planos reduz subjetividade e aumenta previsibilidade operacional.
 

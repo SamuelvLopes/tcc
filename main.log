@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.141592653-2.6-0.999998 (MiKTeX 26.2) (preloaded format=xelatex 2026.2.22)  23 FEB 2026 02:07
+This is XeTeX, Version 3.141592653-2.6-0.999998 (MiKTeX 26.2) (preloaded format=xelatex 2026.2.22)  21 MAR 2026 03:17
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -1548,24 +1548,29 @@ LaTeX Font Info:    Overwriting math alphabet `\mathtt' in version `bold'
 File: Imagens/logo-ifpe.png Graphic file (type bmp)
 <Imagens/logo-ifpe.png>
 
-Underfull \hbox (badness 4242) in paragraph at lines 35--35
-[]\TU/Arial(0)/m/n/14 SOLUTION FOR IMPLEMENTATION AND MONITORING OF THE
+Underfull \hbox (badness 1221) in paragraph at lines 35--35
+[]\TU/Arial(0)/b/n/16 PPSI Digita2l: Sistema para Implantação e Acompanha-
  []
 
 [1
 
-] [2]
+]
+Overfull \hbox (5.8593pt too wide) in paragraph at lines 57--59
+\TU/Arial(0)/m/n/12 gains in traceability, diagnostic standardization, and deci
+sion-making support. Keywords:
+ []
+
+[2] [3]
 Overfull \hbox (0.51613pt too wide) in paragraph at lines 102--103
 []\TU/Arial(0)/m/n/12 No contexto de organizações de pequeno e médio porte, a l
 iteratura também aponta
  []
 
-[3]
 Package microtype Info: Loading generic protrusion settings for font family
 (microtype)             `lmtt' (encoding: TU).
 (microtype)             For optimal results, create family-specific settings.
 (microtype)             See the microtype manual for details.
- [4]
+[4]
 (C:\Users\Samuel Lopes\AppData\Local\Programs\MiKTeX\tex/latex/microtype\mt-cmr
 .cfg
 File: mt-cmr.cfg 2013/05/19 v2.2 microtype config. file: Computer Modern Roman 
@@ -1668,10 +1673,10 @@ Underfull \hbox (badness 10000) in paragraph at lines 197--197
 
 File: imgs/Figura 1.png Graphic file (type bmp)
 <imgs/Figura 1.png>
-[7]
+[7] [8]
 File: imgs/Figura 2.png Graphic file (type bmp)
 <imgs/Figura 2.png>
- [8] [9]
+ [9]
 File: imgs/Figura 3.png Graphic file (type bmp)
 <imgs/Figura 3.png>
 
@@ -1691,7 +1696,7 @@ LaTeX2e <2025-11-01>
 L3 programming layer <2020/03/25>
  ***********
 Package rerunfilecheck Info: File `main.out' has not changed.
-(rerunfilecheck)             Checksum: 472A3D44F59EFFCA0B59EA69B0F03902;4711.
+(rerunfilecheck)             Checksum: 44BF4977737FB276B4EC883D1F1A17BA;4840.
 Package logreq Info: Writing requests to 'main.run.xml'.
 \openout1 = `main.run.xml'.
 
@@ -1699,7 +1704,7 @@ Package logreq Info: Writing requests to 'main.run.xml'.
 Here is how much of TeX's memory you used:
  36907 strings out of 402983
  732759 string characters out of 5447033
- 1716838 words of memory out of 5000000
+ 1719904 words of memory out of 5000000
  65123 multiletter control sequences out of 15000+600000
  631980 words of font info for 76 fonts, out of 8000000 for 9000
  1348 hyphenation exceptions out of 8191
