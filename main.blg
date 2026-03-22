@@ -1,15 +1,48 @@
-[6] Config.pm:328> INFO - This is Biber 2.21
-[9] Config.pm:331> INFO - Logfile is 'main.blg'
-[1169] biber-MSWIN64:342> INFO - === 
-[1522] Biber.pm:421> INFO - Reading 'main.bcf'
-[3191] Biber.pm:1002> INFO - Found 14 citekeys in bib section 0
-[3279] Biber.pm:4487> INFO - Processing section 0
-[3368] Biber.pm:4678> INFO - Looking for bibtex file 'bibliografia.bib' for section 0
-[3530] bibtex.pm:1713> INFO - LaTeX decoding ...
-[3687] bibtex.pm:1519> INFO - Found BibTeX data source 'bibliografia.bib'
-[4773] UCollate.pm:68> INFO - Overriding locale 'pt-PT' defaults 'variable = shifted' with 'variable = non-ignorable'
-[4775] UCollate.pm:68> INFO - Overriding locale 'pt-PT' defaults 'normalization = NFD' with 'normalization = prenormalized'
-[4777] Biber.pm:4307> INFO - Sorting list 'nty/global//global/global/global' of type 'entry' with template 'nty' and locale 'pt-PT'
-[4791] Biber.pm:4313> INFO - No sort tailoring available for locale 'pt-PT'
-[4995] bbl.pm:676> INFO - Writing 'main.bbl' with encoding 'UTF-8'
-[5089] bbl.pm:779> INFO - Output to main.bbl
+This is BibTeX, Version 0.99e
+Capacity: max_strings=200000, hash_size=200000, hash_prime=170003
+The top-level auxiliary file: main.aux
+Reallocating 'name_of_file' (item size: 1) to 4 items.
+The style file: sbc.bst
+Reallocating 'name_of_file' (item size: 1) to 13 items.
+Database file #1: bibliografia.bib
+You've used 14 entries,
+            1935 wiz_defined-function locations,
+            537 strings with 6463 characters,
+and the built_in function-call counts, 4459 in all, are:
+= -- 459
+> -- 203
+< -- 9
++ -- 68
+- -- 66
+* -- 331
+:= -- 862
+add.period$ -- 54
+call.type$ -- 14
+change.case$ -- 98
+chr.to.int$ -- 12
+cite$ -- 14
+duplicate$ -- 157
+empty$ -- 252
+format.name$ -- 85
+if$ -- 832
+int.to.chr$ -- 3
+int.to.str$ -- 0
+missing$ -- 5
+newline$ -- 85
+num.names$ -- 42
+pop$ -- 51
+preamble$ -- 1
+purify$ -- 98
+quote$ -- 0
+skip$ -- 138
+stack$ -- 0
+substring$ -- 202
+swap$ -- 5
+text.length$ -- 0
+text.prefix$ -- 0
+top$ -- 0
+type$ -- 84
+warning$ -- 0
+while$ -- 31
+width$ -- 0
+write$ -- 198

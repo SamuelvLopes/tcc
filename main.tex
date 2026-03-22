@@ -1,63 +1,54 @@
 \documentclass[12pt]{article}
-\usepackage{ArtigoIFPE}
-\graphicspath{{Imagens/}}
+
+\usepackage{sbc-template}
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage[brazil]{babel}
+\usepackage{amsmath}
+\usepackage{graphicx}
+\usepackage{url}
 \usepackage{placeins}
 
-\title{PPSI Digital: teste Sistema para Implantação e Acompanhamento do Programa de Privacidade e Segurança da Informação do Gov.br}
-\titleEng{PPSI Digital: System for Implementing and Monitoring the Gov.br Privacy and Information Security Program}
+\graphicspath{{imgs/}{Imagens/}}
+\sloppy
 
-\autora{Samuel Vitor Lopes de Souza}
-\emaila{samuelvitorprofissional@gmail.com}
-\orientador{Marco Antônio Eugênio Araújo}
-\emailOrientador{}
+\title{PPSI Digital: Sistema para Implantação e Acompanhamento do Programa de Privacidade e Segurança da Informação do Gov.br}
 
-\campus{Recife}
-\curso{Tecnólogo em Análise e Desenvolvimento de Sistemas}
-\data{23 de fevereiro de 2026}
+\author{Samuel Vitor Lopes de Souza}
 
-\newcommand{\mockfig}[3]{
-\begin{figure}[htb]
-\centering
-\fbox{\begin{minipage}[c][6cm][c]{0.90\linewidth}
-\centering
-\textbf{[MOCK DE IMAGEM]}\\[6pt]
-#1\\[6pt]
-\textit{Substituir por print real do sistema na versão final.}
-\end{minipage}}
-\caption{#2}
-\label{#3}
-\end{figure}
-}
+\address{Instituto Federal de Pernambuco (IFPE) -- Campus Recife\\
+Curso Superior de Tecnologia em Análise e Desenvolvimento de Sistemas\\
+Recife -- PE -- Brasil\\
+\email{samuelvitorprofissional@gmail.com}\\
+\textit{Orientador: Marco Antônio Eugênio Araújo}}
 
 \begin{document}
 
 \maketitle
 
-\thispagestyle{plain}
-
-\section*{Resumo}
-
-\noindent A Segurança da Informação tornou-se um elemento estratégico para as organizações em razão da crescente dependência de sistemas informatizados e do aumento da incidência de incidentes de segurança. Vazamentos de dados, acessos não autorizados e falhas operacionais evidenciam a necessidade de mecanismos que garantam a proteção adequada dos ativos de informação. Nesse contexto, o Programa de Privacidade e Segurança da Informação (PPSI) do Gov.br destaca-se como iniciativa institucional para estabelecer diretrizes, normas e responsabilidades.
+\begin{resumo}
+A Segurança da Informação tornou-se um elemento estratégico para as organizações em razão da crescente dependência de sistemas informatizados e do aumento da incidência de incidentes de segurança. Vazamentos de dados, acessos não autorizados e falhas operacionais evidenciam a necessidade de mecanismos que garantam a proteção adequada dos ativos de informação. Nesse contexto, o Programa de Privacidade e Segurança da Informação (PPSI) do Gov.br destaca-se como iniciativa institucional para estabelecer diretrizes, normas e responsabilidades.
 
 Apesar de sua importância, muitas organizações ainda apresentam dificuldades na implantação efetiva e no acompanhamento contínuo do PPSI do Gov.br. Em diversos cenários, o programa é tratado apenas como documento normativo para fins de auditoria, sem mecanismos estruturados para mensurar maturidade, monitorar evolução e direcionar melhorias.
 
 Este trabalho apresenta o desenvolvimento de uma solução tecnológica para implantação e acompanhamento do PPSI Digital, integrada ao sistema WorkControl, em arquitetura multi-tenant por \textit{workspace}. A solução estrutura o processo por ciclos de avaliação, aplica diagnóstico por medidas, calcula indicadores globais e por domínio e apoia a geração e execução de planos de ação.
 
 A metodologia adotada envolveu revisão bibliográfica, definição do modelo de dados, implementação de serviços de domínio e validação por prova de conceito com execução ponta a ponta do ciclo do PPSI. Como resultado, obteve-se evidência funcional de viabilidade do fluxo proposto, com ganhos potenciais de rastreabilidade, padronização do diagnóstico e apoio à tomada de decisão.
-\palavraschave{Segurança da Informação. Programa de Privacidade e Segurança da Informação. Gov.br. PPSI. Maturidade. Sistemas de Informação.}
+\end{resumo}
 
-\section*{Abstract}
+\noindent \textbf{Palavras-chave:} Segurança da Informação. Programa de Privacidade e Segurança da Informação. Gov.br. PPSI. Maturidade. Sistemas de Informação.
 
-\noindent Information Security has become a strategic element for organizations due to the increasing reliance on information systems and the growing number of security incidents. Data breaches, unauthorized access, and operational failures highlight the need for mechanisms that ensure adequate protection of information assets. In this context, the Gov.br Privacy and Information Security Program (PPSI) is a key instrument for defining guidelines, rules, and responsibilities.
+\begin{abstract}
+Information Security has become a strategic element for organizations due to the increasing reliance on information systems and the growing number of security incidents. Data breaches, unauthorized access, and operational failures highlight the need for mechanisms that ensure adequate protection of information assets. In this context, the Gov.br Privacy and Information Security Program (PPSI) is a key instrument for defining guidelines, rules, and responsibilities.
 
 Despite its relevance, many organizations still face difficulties in effectively implementing and continuously monitoring the PPSI. In several situations, the program is handled only as a compliance document, without structured mechanisms to measure maturity, track progress, and drive continuous improvement.
 
 This work presents the development of a technological solution for PPSI implementation and monitoring, integrated into the WorkControl system under a multi-tenant workspace architecture. The solution organizes the process through assessment cycles, structured diagnosis by measures, global and domain indicators, and action-plan generation and follow-up.
 
 The adopted methodology included literature review, data-model design, implementation of domain services, and proof-of-concept validation with an end-to-end PPSI cycle execution. The outcome provides functional evidence of feasibility, with potential gains in traceability, diagnostic standardization, and decision-making support.
-\keywords{Information Security. Gov.br Privacy and Information Security Program. PPSI. Maturity. Information Systems.}
+\end{abstract}
 
-\vspace*{20pt} \hrule height 1.5pt
+\noindent \textbf{Keywords:} Information Security. Gov.br Privacy and Information Security Program. PPSI. Maturity. Information Systems.
 
 \section{Introdução}
 
@@ -355,6 +346,7 @@ Como trabalhos futuros, recomendam-se:
     \item aplicação da solução em estudos de caso reais com comparação entre ciclos.
 \end{itemize}
 
-\printbibliography[title={REFERÊNCIAS}]
+\bibliographystyle{sbc}
+\bibliography{bibliografia}
 
 \end{document}
